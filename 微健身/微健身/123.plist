@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>&lt;肱三头肌锻炼&gt;</string>
+		<key>string</key>
+		<string>林花谢了春红，太匆匆， 无奈朝来寒雨，晚来风。 胭脂泪，相留醉，几时重？自是人生长恨水长东。</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>&lt;肱二头肌锻炼&gt;</string>
+		<key>string</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>&lt;背部锻炼&gt;</string>
+		<key>string</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>&lt;小腿锻炼&gt;</string>
+		<key>string</key>
+		<string>4</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>&lt;肩部锻炼&gt;</string>
+		<key>string</key>
+		<string>5</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>&lt;胸肌锻炼&gt;</string>
+		<key>string</key>
+		<string>6</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>&lt;小臂锻炼&gt;</string>
+		<key>string</key>
+		<string>7</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>&lt;腹肌锻炼&gt;</string>
+		<key>string</key>
+		<string>人家就</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>&lt;大腿肌肉锻炼&gt;</string>
+		<key>string</key>
+		<string>发帖就开了</string>
+	</dict>
+</array>
+</plist>
