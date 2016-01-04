@@ -29,12 +29,6 @@
    DataModels *model = _arr1[_flag-101];
 
 
-//    //创建一个ImageView ，用来播放健身图片。
-//    UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(50, 80, 275, 400)];
-//   
-//    image.image = [UIImage imageNamed:model.image ];
-//    image.backgroundColor = [UIColor blackColor];
-//     [self.view addSubview:image];
   
    //创建scrollView
    UIScrollView *scrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(50, 80, 275, 400)];
@@ -86,17 +80,7 @@
    
    [self.view addSubview:lab];
    
-//   //创建一个导航栏
-//   UINavigationBar *bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 21, 375, 44)];
-//   [self.view addSubview:bar];
-//   
-//   //创建一个按钮
-//   UIBarButtonItem *btn = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(click:)];
-//   
-//   
-//   self.navigationItem.leftBarButtonItem = btn;
-//   self.navigationItem.title = @"微健身";
-   //创建一个返回上一页的button。
+
    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(15, 25, 50,30)];
 //   btn.backgroundColor = [UIColor brownColor];
    [self.view addSubview:btn];

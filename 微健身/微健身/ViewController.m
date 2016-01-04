@@ -134,7 +134,7 @@
     //设置scroll的图片
         NSString *imageName = [NSString stringWithFormat:@"11_%d.jpg",i + 1];
         imageView.image = [UIImage imageNamed:imageName];
-    
+        
     }
 }
 #pragma mark   ---添加PageControl---

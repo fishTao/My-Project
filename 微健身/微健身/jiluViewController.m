@@ -10,15 +10,17 @@
 #import "AddViewController.h"
 
 @interface jiluViewController ()<UITableViewDataSource,UITableViewDelegate>
-@property (nonatomic ,strong) NSArray *datas;
+@property (nonatomic ,strong) NSMutableArray *datas;
+@property (nonatomic ,strong) UITableView *myTable;
+
 @end
 
 @implementation jiluViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-      
-
+    _datas = [NSMutableArray array];
+    
     //设置背景色
     self.view.backgroundColor = [UIColor whiteColor];
     //添加左右按钮
@@ -33,13 +35,14 @@
     
 #pragma mark     ----------UITableView------
     
-    UITableView *tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 375, 667) style:UITableViewStylePlain];
+    _myTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 375, 667) style:UITableViewStylePlain];
     
     //设置代理
-    tableview.delegate = self;
-    tableview.dataSource = self;
-    tableview.rowHeight = 100;
-    [self.view addSubview:tableview];
+    _myTable.delegate = self;
+    _myTable.dataSource = self;
+    _myTable.rowHeight = 100;
+    
+    [self.view addSubview:_myTable];
     
  
     // Do any additional setup after loading the view.
@@ -51,12 +54,35 @@
     return _datas.count;
 }
 
+#pragma mark  =======设置删除======
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //移除数据源的数据
+    [self.datas removeObjectAtIndex:indexPath.row];
+    //移除tableView中的数据
+    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+
+}
+
+
+
+
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *identfier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identfier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identfier];
     }
+    //显示多行
+    cell.textLabel.numberOfLines = 0;
+    //文字自适应大小
+    cell.textLabel.adjustsFontSizeToFitWidth = YES;
     cell.textLabel.text = _datas[indexPath.row];
   
     return cell;
@@ -87,19 +113,29 @@
     AddViewController *View = [[AddViewController alloc] init];
     
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:View];
+    View.addLabelValue = ^(NSString *string){
+        
+        
+        [_datas addObject:string];
+        [self.myTable reloadData];
+    };
+
     
     [self presentViewController:navi animated:YES completion:^{
     }];
     
 }
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+  
+    
+
 }
-*/
+
 
 @end

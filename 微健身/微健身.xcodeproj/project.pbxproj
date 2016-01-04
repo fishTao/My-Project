@@ -53,6 +53,7 @@
 		CCC9AD631C049514009AB692 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC9AD621C049514009AB692 /* ___Tests.m */; };
 		CCCE81A31C055670008D9F94 /* CartoonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCE81A21C055670008D9F94 /* CartoonViewController.m */; };
 		CCD463E21C1BB0C100EF774E /* 11_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCD463E11C1BB0C100EF774E /* 11_2.jpg */; };
+		CCD6BDEE1C3AB13000007C66 /* jihua1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD6BDED1C3AB13000007C66 /* jihua1ViewController.m */; };
 		CCD7E0391C21408000892903 /* 3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7DFC61C21408000892903 /* 3_1.png */; };
 		CCD7E03A1C21408000892903 /* 3_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7DFC71C21408000892903 /* 3_2.png */; };
 		CCD7E03B1C21408000892903 /* 3_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7DFC81C21408000892903 /* 3_3.png */; };
@@ -162,7 +163,7 @@
 		CC090E6A1C0EEEFB00537682 /* 123.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 123.plist; sourceTree = "<group>"; };
 		CC0974D51C190FAE0058CB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC0E2E7D1C2A989B00FA79BB /* jiluViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jiluViewController.h; sourceTree = "<group>"; };
-		CC0E2E7E1C2A989B00FA79BB /* jiluViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jiluViewController.m; sourceTree = "<group>"; };
+		CC0E2E7E1C2A989B00FA79BB /* jiluViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jiluViewController.m; sourceTree = "<group>"; tabWidth = 5; };
 		CC0E2E801C2AD01000FA79BB /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
 		CC0E2E811C2AD01000FA79BB /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 		CC1E724C1C190AFD0099D882 /* 主页面.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "主页面.jpg"; sourceTree = "<group>"; };
@@ -216,6 +217,8 @@
 		CCCE81A11C055670008D9F94 /* CartoonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonViewController.h; sourceTree = "<group>"; };
 		CCCE81A21C055670008D9F94 /* CartoonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonViewController.m; sourceTree = "<group>"; };
 		CCD463E11C1BB0C100EF774E /* 11_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11_2.jpg; sourceTree = "<group>"; };
+		CCD6BDEC1C3AB13000007C66 /* jihua1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jihua1ViewController.h; sourceTree = "<group>"; };
+		CCD6BDED1C3AB13000007C66 /* jihua1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jihua1ViewController.m; sourceTree = "<group>"; };
 		CCD7DFC61C21408000892903 /* 3_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_1.png; sourceTree = "<group>"; };
 		CCD7DFC71C21408000892903 /* 3_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_2.png; sourceTree = "<group>"; };
 		CCD7DFC81C21408000892903 /* 3_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_3.png; sourceTree = "<group>"; };
@@ -412,6 +415,8 @@
 			children = (
 				CCA4543A1C1EED8E00736D9B /* jihuaViewController.h */,
 				CCA4543B1C1EED8E00736D9B /* jihuaViewController.m */,
+				CCD6BDEC1C3AB13000007C66 /* jihua1ViewController.h */,
+				CCD6BDED1C3AB13000007C66 /* jihua1ViewController.m */,
 			);
 			name = "计划";
 			sourceTree = "<group>";
@@ -916,6 +921,7 @@
 			files = (
 				CC07E86D1C223F0C0009F8E4 /* ViewController.m in Sources */,
 				CCA454371C1EE59300736D9B /* meituViewController.m in Sources */,
+				CCD6BDEE1C3AB13000007C66 /* jihua1ViewController.m in Sources */,
 				CC0E2E821C2AD01000FA79BB /* AddViewController.m in Sources */,
 				CCA4543C1C1EED8E00736D9B /* jihuaViewController.m in Sources */,
 				CCCE81A31C055670008D9F94 /* CartoonViewController.m in Sources */,
