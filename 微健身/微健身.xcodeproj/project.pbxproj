@@ -28,7 +28,6 @@
 		CC32030E1C33B6EA00634F5A /* 设置.png in Resources */ = {isa = PBXBuildFile; fileRef = CC3203071C33B6EA00634F5A /* 设置.png */; };
 		CC32030F1C33B6EA00634F5A /* 资讯.png in Resources */ = {isa = PBXBuildFile; fileRef = CC3203081C33B6EA00634F5A /* 资讯.png */; };
 		CC3203101C33B6EA00634F5A /* 退出.png in Resources */ = {isa = PBXBuildFile; fileRef = CC3203091C33B6EA00634F5A /* 退出.png */; };
-		CC5751521C185C2F007EC88E /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5751511C185C2F007EC88E /* SetViewController.m */; };
 		CC7581121C05B1AF0032B73A /* MuscleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7581111C05B1AF0032B73A /* MuscleViewController.m */; };
 		CC76F2431C1D53E400329DEA /* a_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC76F2391C1D53E400329DEA /* a_1.jpg */; };
 		CC76F2441C1D53E400329DEA /* a_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC76F23A1C1D53E400329DEA /* a_2.jpg */; };
@@ -44,7 +43,6 @@
 		CC80296F1C21A73F0041758F /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029661C21A73F0041758F /* 8.png */; };
 		CC8029701C21A73F0041758F /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029671C21A73F0041758F /* 9.png */; };
 		CCA454341C1EDE6900736D9B /* 功能.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA454331C1EDE6900736D9B /* 功能.png */; };
-		CCA454371C1EE59300736D9B /* meituViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA454361C1EE59300736D9B /* meituViewController.m */; };
 		CCA4543C1C1EED8E00736D9B /* jihuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4543B1C1EED8E00736D9B /* jihuaViewController.m */; };
 		CCC9AD491C049513009AB692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC9AD481C049513009AB692 /* main.m */; };
 		CCC9AD4C1C049513009AB692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC9AD4B1C049513009AB692 /* AppDelegate.m */; };
@@ -52,8 +50,6 @@
 		CCC9AD571C049513009AB692 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC9AD551C049513009AB692 /* LaunchScreen.xib */; };
 		CCC9AD631C049514009AB692 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC9AD621C049514009AB692 /* ___Tests.m */; };
 		CCCE81A31C055670008D9F94 /* CartoonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCE81A21C055670008D9F94 /* CartoonViewController.m */; };
-		CCD463E21C1BB0C100EF774E /* 11_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCD463E11C1BB0C100EF774E /* 11_2.jpg */; };
-		CCD6BDEE1C3AB13000007C66 /* jihua1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD6BDED1C3AB13000007C66 /* jihua1ViewController.m */; };
 		CCD7E0391C21408000892903 /* 3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7DFC61C21408000892903 /* 3_1.png */; };
 		CCD7E03A1C21408000892903 /* 3_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7DFC71C21408000892903 /* 3_2.png */; };
 		CCD7E03B1C21408000892903 /* 3_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7DFC81C21408000892903 /* 3_3.png */; };
@@ -144,6 +140,10 @@
 		CCD7E09E1C21408000892903 /* 8_8.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7E0331C21408000892903 /* 8_8.png */; };
 		CCD7E09F1C21408000892903 /* 8_9.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7E0341C21408000892903 /* 8_9.png */; };
 		CCD7E0A21C21408000892903 /* 8_10.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7E0371C21408000892903 /* 8_10.png */; };
+		CCE0574D1C3B518B0065FAA9 /* zijihuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0574B1C3B518B0065FAA9 /* zijihuaViewController.m */; };
+		CCE0574E1C3B518B0065FAA9 /* zijihuaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCE0574C1C3B518B0065FAA9 /* zijihuaViewController.xib */; };
+		CCE0578B1C3BE7BC0065FAA9 /* 11_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE0578A1C3BE7BC0065FAA9 /* 11_3.jpg */; };
+		CCE0578D1C3BF5320065FAA9 /* 11_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE0578C1C3BF5320065FAA9 /* 11_2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,8 +181,6 @@
 		CC3203071C33B6EA00634F5A /* 设置.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置.png"; sourceTree = "<group>"; };
 		CC3203081C33B6EA00634F5A /* 资讯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "资讯.png"; sourceTree = "<group>"; };
 		CC3203091C33B6EA00634F5A /* 退出.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "退出.png"; sourceTree = "<group>"; };
-		CC5751501C185C2F007EC88E /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
-		CC5751511C185C2F007EC88E /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
 		CC7581101C05B1AF0032B73A /* MuscleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuscleViewController.h; sourceTree = "<group>"; };
 		CC7581111C05B1AF0032B73A /* MuscleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.c.objc; path = MuscleViewController.m; sourceTree = "<group>"; };
 		CC76F2391C1D53E400329DEA /* a_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a_1.jpg; sourceTree = "<group>"; };
@@ -199,8 +197,6 @@
 		CC8029661C21A73F0041758F /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8.png; path = "健身宝典素材/图片/视图1肌肉按钮/8.png"; sourceTree = SOURCE_ROOT; };
 		CC8029671C21A73F0041758F /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9.png; path = "健身宝典素材/图片/视图1肌肉按钮/9.png"; sourceTree = SOURCE_ROOT; };
 		CCA454331C1EDE6900736D9B /* 功能.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "功能.png"; sourceTree = "<group>"; };
-		CCA454351C1EE59300736D9B /* meituViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meituViewController.h; sourceTree = "<group>"; };
-		CCA454361C1EE59300736D9B /* meituViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meituViewController.m; sourceTree = "<group>"; };
 		CCA4543A1C1EED8E00736D9B /* jihuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jihuaViewController.h; sourceTree = "<group>"; };
 		CCA4543B1C1EED8E00736D9B /* jihuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jihuaViewController.m; sourceTree = "<group>"; };
 		CCC9AD431C049513009AB692 /* 微健身.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微健身.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,9 +212,6 @@
 		CCC9AD621C049514009AB692 /* ___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___Tests.m"; sourceTree = "<group>"; };
 		CCCE81A11C055670008D9F94 /* CartoonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonViewController.h; sourceTree = "<group>"; };
 		CCCE81A21C055670008D9F94 /* CartoonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonViewController.m; sourceTree = "<group>"; };
-		CCD463E11C1BB0C100EF774E /* 11_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11_2.jpg; sourceTree = "<group>"; };
-		CCD6BDEC1C3AB13000007C66 /* jihua1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jihua1ViewController.h; sourceTree = "<group>"; };
-		CCD6BDED1C3AB13000007C66 /* jihua1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jihua1ViewController.m; sourceTree = "<group>"; };
 		CCD7DFC61C21408000892903 /* 3_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_1.png; sourceTree = "<group>"; };
 		CCD7DFC71C21408000892903 /* 3_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_2.png; sourceTree = "<group>"; };
 		CCD7DFC81C21408000892903 /* 3_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_3.png; sourceTree = "<group>"; };
@@ -309,6 +302,11 @@
 		CCD7E0331C21408000892903 /* 8_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_8.png; sourceTree = "<group>"; };
 		CCD7E0341C21408000892903 /* 8_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_9.png; sourceTree = "<group>"; };
 		CCD7E0371C21408000892903 /* 8_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_10.png; sourceTree = "<group>"; };
+		CCE0574A1C3B518B0065FAA9 /* zijihuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zijihuaViewController.h; sourceTree = "<group>"; };
+		CCE0574B1C3B518B0065FAA9 /* zijihuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zijihuaViewController.m; sourceTree = "<group>"; };
+		CCE0574C1C3B518B0065FAA9 /* zijihuaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zijihuaViewController.xib; sourceTree = "<group>"; };
+		CCE0578A1C3BE7BC0065FAA9 /* 11_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11_3.jpg; sourceTree = "<group>"; };
+		CCE0578C1C3BF5320065FAA9 /* 11_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11_2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,8 +342,9 @@
 		CC1E724B1C190AFD0099D882 /* 主界面 */ = {
 			isa = PBXGroup;
 			children = (
+				CCE0578A1C3BE7BC0065FAA9 /* 11_3.jpg */,
 				CC1E72991C190B730099D882 /* 11_1.jpg */,
-				CCD463E11C1BB0C100EF774E /* 11_2.jpg */,
+				CCE0578C1C3BF5320065FAA9 /* 11_2.jpg */,
 				CC1E725B1C190AFD0099D882 /* 记录.png */,
 				CC1E724C1C190AFD0099D882 /* 主页面.jpg */,
 				CC1E724E1C190AFD0099D882 /* 咨询.png */,
@@ -401,22 +400,14 @@
 			path = "../微健身/图标";
 			sourceTree = "<group>";
 		};
-		CC3C83281C184C9100E090C1 /* 设置 */ = {
-			isa = PBXGroup;
-			children = (
-				CC5751501C185C2F007EC88E /* SetViewController.h */,
-				CC5751511C185C2F007EC88E /* SetViewController.m */,
-			);
-			name = "设置";
-			sourceTree = "<group>";
-		};
 		CCA454381C1EEC7B00736D9B /* 计划 */ = {
 			isa = PBXGroup;
 			children = (
 				CCA4543A1C1EED8E00736D9B /* jihuaViewController.h */,
 				CCA4543B1C1EED8E00736D9B /* jihuaViewController.m */,
-				CCD6BDEC1C3AB13000007C66 /* jihua1ViewController.h */,
-				CCD6BDED1C3AB13000007C66 /* jihua1ViewController.m */,
+				CCE0574A1C3B518B0065FAA9 /* zijihuaViewController.h */,
+				CCE0574B1C3B518B0065FAA9 /* zijihuaViewController.m */,
+				CCE0574C1C3B518B0065FAA9 /* zijihuaViewController.xib */,
 			);
 			name = "计划";
 			sourceTree = "<group>";
@@ -430,15 +421,6 @@
 				CC0E2E811C2AD01000FA79BB /* AddViewController.m */,
 			);
 			name = "记录";
-			sourceTree = "<group>";
-		};
-		CCBA2F491C05542C00882467 /* 美图 */ = {
-			isa = PBXGroup;
-			children = (
-				CCA454351C1EE59300736D9B /* meituViewController.h */,
-				CCA454361C1EE59300736D9B /* meituViewController.m */,
-			);
-			name = "美图";
 			sourceTree = "<group>";
 		};
 		CCC8E1D11C0EA07E00752606 /* 锻炼 */ = {
@@ -478,8 +460,6 @@
 			isa = PBXGroup;
 			children = (
 				CCC8E1D11C0EA07E00752606 /* 锻炼 */,
-				CCBA2F491C05542C00882467 /* 美图 */,
-				CC3C83281C184C9100E090C1 /* 设置 */,
 				CCA454381C1EEC7B00736D9B /* 计划 */,
 				CCA454391C1EEC8100736D9B /* 记录 */,
 				CC0974D41C190FAE0058CB24 /* Main.storyboard */,
@@ -801,7 +781,6 @@
 				CCD7E0931C21408000892903 /* 6_7.png in Resources */,
 				CCD7E04C1C21408000892903 /* 9_10.png in Resources */,
 				CCD7E05F1C21408000892903 /* 1_3.png in Resources */,
-				CCD463E21C1BB0C100EF774E /* 11_2.jpg in Resources */,
 				CC1E727D1C190AFD0099D882 /* 肌肉图.png in Resources */,
 				CCD7E0961C21408000892903 /* 6_10.png in Resources */,
 				CCD7E04E1C21408000892903 /* 2_2.png in Resources */,
@@ -862,6 +841,7 @@
 				CCD7E0731C21408000892903 /* 7_2.png in Resources */,
 				CCD7E0911C21408000892903 /* 6_5.png in Resources */,
 				CCD7E0831C21408000892903 /* 4_1.png in Resources */,
+				CCE0578D1C3BF5320065FAA9 /* 11_2.jpg in Resources */,
 				CCD7E0491C21408000892903 /* 9_7.png in Resources */,
 				CCD7E0781C21408000892903 /* 7_7.png in Resources */,
 				CCD7E0611C21408000892903 /* 1_5.png in Resources */,
@@ -874,6 +854,7 @@
 				CCD7E0421C21408000892903 /* 3_10.png in Resources */,
 				CC1E72871C190AFD0099D882 /* 计划.png in Resources */,
 				CC32030E1C33B6EA00634F5A /* 设置.png in Resources */,
+				CCE0578B1C3BE7BC0065FAA9 /* 11_3.jpg in Resources */,
 				CC1E72981C190B3B0099D882 /* 动画.png in Resources */,
 				CC76F2441C1D53E400329DEA /* a_2.jpg in Resources */,
 				CCD7E0511C21408000892903 /* 2_5.png in Resources */,
@@ -882,6 +863,7 @@
 				CCD7E0981C21408000892903 /* 8_2.png in Resources */,
 				CCD7E0801C21408000892903 /* 5_10.png in Resources */,
 				CCA454341C1EDE6900736D9B /* 功能.png in Resources */,
+				CCE0574E1C3B518B0065FAA9 /* zijihuaViewController.xib in Resources */,
 				CC1E727C1C190AFD0099D882 /* 咨询.png in Resources */,
 				CC1E729A1C190B730099D882 /* 11_1.jpg in Resources */,
 				CCD7E0871C21408000892903 /* 4_5.png in Resources */,
@@ -920,15 +902,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC07E86D1C223F0C0009F8E4 /* ViewController.m in Sources */,
-				CCA454371C1EE59300736D9B /* meituViewController.m in Sources */,
-				CCD6BDEE1C3AB13000007C66 /* jihua1ViewController.m in Sources */,
 				CC0E2E821C2AD01000FA79BB /* AddViewController.m in Sources */,
 				CCA4543C1C1EED8E00736D9B /* jihuaViewController.m in Sources */,
 				CCCE81A31C055670008D9F94 /* CartoonViewController.m in Sources */,
-				CC5751521C185C2F007EC88E /* SetViewController.m in Sources */,
 				CC7581121C05B1AF0032B73A /* MuscleViewController.m in Sources */,
 				CC0E2E7F1C2A989B00FA79BB /* jiluViewController.m in Sources */,
 				CC090E691C0EA12D00537682 /* DataModels.m in Sources */,
+				CCE0574D1C3B518B0065FAA9 /* zijihuaViewController.m in Sources */,
 				CCC9AD4C1C049513009AB692 /* AppDelegate.m in Sources */,
 				CCC9AD491C049513009AB692 /* main.m in Sources */,
 			);

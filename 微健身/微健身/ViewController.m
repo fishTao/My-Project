@@ -12,10 +12,14 @@
 #import "jihuaViewController.h"
 #import "jiluViewController.h"
 
+
+
 @interface ViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *ImageView;
 
-
+@property (nonatomic ,strong) UIScrollView *myScroller;
+@property (nonatomic ,strong) UIPageControl *pageControl;
+@property (nonatomic ,strong) NSTimer *timer;
 @property(nonatomic ,strong) NSArray *datas;
 @end
 
@@ -23,9 +27,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
+    //执行图片轮播定时器
+    [self addTimer];
     self.view.backgroundColor = [UIColor grayColor];
+    
     [self addScrollView];
-    [self page];
+    
 
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -50,7 +58,7 @@
     vc.arr= [NSArray arrayWithArray:self.datas];
     
 }
-#pragma mark   ---------计划---------
+#pragma mark   ---------跳转至计划---------
 // 计划。
 //初始化storyboard（Main），找到要用的storyboard的ID，用新建的类调用找到的storyboard的ID
 - (IBAction)jihua:(UIButton *)sender {
@@ -61,7 +69,7 @@
     
 }
 
-#pragma mark  ----------记录-----------
+#pragma mark  ----------跳转至记录-----------
 - (IBAction)jilu:(UIButton *)sender {
     jiluViewController *jiluView = [[jiluViewController alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:jiluView];
@@ -69,17 +77,6 @@
     }];
 }
 
-
-
-#pragma mark  --------右上角弹出弹窗--------
-- (IBAction)set:(UIBarButtonItem *)sender {
-    //创建右上角退出弹窗
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提醒" message:@"是否退出 ? " delegate:self cancelButtonTitle:@"再看看" otherButtonTitles:@"退出", nil];
-    //设置弹窗的风格
-    alertView.alertViewStyle = UIAlertViewStyleDefault ;
-    //弹出alertView
-    [alertView show];
-}
 
 #pragma mark  --------设置咨询弹窗--------
 //设置登录咨询弹窗
@@ -102,31 +99,53 @@
     [alertController addAction:okAction];
     //显示alertController
     [self presentViewController:alertController animated:YES completion:^{
-    
+        
     }];
-
+    
 }
+
+
+#pragma mark  --------右上角弹出弹窗--------
+- (IBAction)set:(UIBarButtonItem *)sender {
+    //创建右上角退出弹窗
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提醒" message:@"是否退出 ? " delegate:self cancelButtonTitle:@"再看看" otherButtonTitles:@"退出", nil];
+    //设置弹窗的风格
+    alertView.alertViewStyle = UIAlertViewStyleDefault ;
+    //弹出alertView
+    [alertView show];
+}
+
+
 #pragma mark    ---------添加SclollView----------
 
 //添加用于滚动的scrollView
 -(void)addScrollView{
     
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 63, 375, 160)];
-    [self.view addSubview:scrollView];
+     int count = 3;
+    
+    _myScroller= [[UIScrollView alloc] initWithFrame:CGRectMake(0, 63, 375, 160)];
+    [self.view addSubview:_myScroller];
     
     //设置contentsize
-    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * 2, 160);
+    _myScroller.contentSize = CGSizeMake(_myScroller.frame.size.width * count, 160);
     //分页
-    scrollView.pagingEnabled = YES;
+    self.myScroller.pagingEnabled = YES;
     //设置代理
-    scrollView.delegate = self;
-      
-    //设置背景
-    scrollView.backgroundColor = [UIColor blackColor];
+    _myScroller.delegate = self;
+    // 设置pagecontrol-------------******
+    self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(167, 200, 40, 25)];
+   
+    [self.view addSubview:self.pageControl];
+    self.pageControl.numberOfPages = count;
     
-    for (int i = 0;i < 2; i++ ) {
+    //设置背景
+    _myScroller.backgroundColor = [UIColor blackColor];
+    
+    
+    
+    for (int i = 0;i < count; i++ ) {
         UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(375 * i,0, 370, 160 )];
-        [scrollView addSubview:scroll];
+        [_myScroller addSubview:scroll];
         
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 370, 150)];
         [scroll addSubview:imageView];
@@ -137,17 +156,48 @@
         
     }
 }
-#pragma mark   ---添加PageControl---
--(void)page {
-    UIPageControl *page = [[UIPageControl alloc]initWithFrame:CGRectMake(0, 190, 375, 37)];
-    //page.backgroundColor = [UIColor brownColor];
-    page.numberOfPages = 2;
-    page.currentPageIndicatorTintColor = [UIColor grayColor];
-    page.pageIndicatorTintColor = [UIColor blackColor];
-    [self.view addSubview:page];
+
+- (void)addTimer
+{
+//设置定时器，让其两秒执行一次方法并循环
+    _timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
+}
+
+- (void)nextImage
+{
+    // 当前页码(到达最大页数后，就返回第一页)
+    NSInteger page = self.pageControl.currentPage;
+    if (page == self.pageControl.numberOfPages - 1) {
+        page = 0;
+    } else {
+        page++;
+    }
+    //一秒翻页一次
+    CGFloat offsetX = page * self.myScroller.frame.size.width;
+    [UIView animateWithDuration:1.0 animations:^{
+        self.myScroller.contentOffset = CGPointMake(offsetX, 0);
+    }];
     
 }
 
+#pragma mark - scrollView滚动代理方法
+// 正在滚动时
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    int page = (scrollView.contentOffset.x + scrollView.frame.size.width / 2) / scrollView.frame.size.width;
+    self.pageControl.currentPage = page;
+}
+// 开始拖拽的时候调用
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    // 停止定时器
+    [self.timer invalidate];
+}
+// 结束拖拽的时候调用
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    [self addTimer];
+}
 
 
 

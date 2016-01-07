@@ -7,7 +7,8 @@
 //
 
 #import "jihuaViewController.h"
-#import "jihua1ViewController.h"
+
+#import "zijihuaViewController.h"
 
 @interface jihuaViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic ,strong) UITableView *myTable;
@@ -79,7 +80,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    jihua1ViewController *vc = [[jihua1ViewController alloc]init];
+    zijihuaViewController *vc = [[zijihuaViewController alloc]init];
     
     [self.navigationController pushViewController:vc animated:YES];
 }

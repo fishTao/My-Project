@@ -1,25 +1,30 @@
 //
-//  jihua1ViewController.m
+//  zijihuaViewController.m
 //  微健身
 //
-//  Created by qingyun on 16/1/4.
+//  Created by qingyun on 16/1/5.
 //  Copyright © 2016年 qingyun. All rights reserved.
 //
 
-#import "jihua1ViewController.h"
+#import "zijihuaViewController.h"
 
-@interface jihua1ViewController ()
+@interface zijihuaViewController ()
 
 @end
 
-@implementation jihua1ViewController
+@implementation zijihuaViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor brownColor];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
