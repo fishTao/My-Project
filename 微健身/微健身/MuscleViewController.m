@@ -23,16 +23,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+
+   //进来后将导航栏设置取消透明（即显示）
+   self.navigationController.navigationBar.translucent = NO;
     //设置背景颜色为白色
-     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+     self.view.backgroundColor = [UIColor whiteColor];
    //接收arr的数据
    DataModels *model = _arr1[_flag-101];
 
+   
+   
+   //设置标题栏
+    self.title = [NSString stringWithFormat:model.title];
+   
 
-  
    //创建scrollView
-   UIScrollView *scrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(50, 80, 275, 400)];
+   UIScrollView *scrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(50, 30, 275, 400)];
    [self.view addSubview:scrollview];
+   
    //设置contenSize
    scrollview.contentSize = CGSizeMake(scrollview.frame.size.width *10 , 400);
    //分页
@@ -54,7 +62,7 @@
    }
 
     //创建一个文本框，用来陈述图片的锻炼方法。
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(40, 500, 300, 80)];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(40, 440, 300, 80)];
     label.backgroundColor = [UIColor grayColor];
 
    label.text = [NSString stringWithFormat:model.string];
@@ -70,26 +78,7 @@
     //设置文本框为透明。
     label.backgroundColor = [UIColor clearColor];
     [self.view addSubview:label];
-   
-   //设置标题
-   UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(70, 35, 200, 30)];
-   lab.text = [NSString stringWithFormat:model.title];
-   
-   //文本居中
-   lab.textAlignment = YES;
-   
-   [self.view addSubview:lab];
-   
 
-   UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(15, 25, 50,30)];
-//   btn.backgroundColor = [UIColor brownColor];
-   [self.view addSubview:btn];
-   [btn setTitle:@"返回" forState:UIControlStateNormal];
-   [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-   
-   
-   [btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
-   
 
     // Do any additional setup after loading the view.
 }
@@ -99,7 +88,11 @@
     [self dismissViewControllerAnimated:YES completion:^{
    }];
 }
-
+//将要离开此界面时候让导航栏变透明。
+- (void)viewWillDisappear:(BOOL)animated{
+   [super viewWillDisappear:YES];
+   self.navigationController.navigationBar.translucent = YES;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
