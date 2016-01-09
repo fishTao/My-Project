@@ -18,8 +18,6 @@
 @implementation MuscleViewController
 
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
    
@@ -31,12 +29,12 @@
    //接收arr的数据
    DataModels *model = _arr1[_flag-101];
 
-   
-   
-   //设置标题栏
+
+   ////设置标题栏
     self.title = [NSString stringWithFormat:model.title];
    
-
+   
+#pragma mark  ========创建scrollView==========
    //创建scrollView
    UIScrollView *scrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(50, 30, 275, 400)];
    [self.view addSubview:scrollview];
@@ -60,7 +58,7 @@
       imageView.image = [UIImage imageNamed:imageName];
    
    }
-
+#pragma mark ========文本框==========
     //创建一个文本框，用来陈述图片的锻炼方法。
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(40, 440, 300, 80)];
     label.backgroundColor = [UIColor grayColor];

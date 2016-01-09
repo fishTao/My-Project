@@ -11,7 +11,7 @@
 #import "CartoonViewController.h"
 #import "jihuaViewController.h"
 #import "jiluViewController.h"
-
+#import "zixunViewController.h"
 
 
 @interface ViewController ()<UIScrollViewDelegate>
@@ -63,8 +63,8 @@
 //初始化storyboard（Main），找到要用的storyboard的ID，用新建的类调用找到的storyboard的ID
 - (IBAction)jihua:(UIButton *)sender {
     jihuaViewController *jihuaView = [[jihuaViewController alloc] init];
-    UINavigationController *navig = [[UINavigationController alloc] initWithRootViewController:jihuaView];
-    [self presentViewController:navig animated:YES completion:^{
+    UINavigationController *jihua = [[UINavigationController alloc] initWithRootViewController:jihuaView];
+    [self presentViewController:jihua animated:YES completion:^{
     }];
     
 }
@@ -72,37 +72,50 @@
 #pragma mark  ----------跳转至记录-----------
 - (IBAction)jilu:(UIButton *)sender {
     jiluViewController *jiluView = [[jiluViewController alloc]init];
-    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:jiluView];
-    [self presentViewController:navi animated:YES completion:^{
+    UINavigationController *jilu = [[UINavigationController alloc]initWithRootViewController:jiluView];
+    [self presentViewController:jilu animated:YES completion:^{
     }];
 }
 
 
-#pragma mark  --------设置咨询弹窗--------
-//设置登录咨询弹窗
-- (IBAction)login:(UIButton *)sender {
-    //创建alertController
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请登录" preferredStyle:UIAlertControllerStyleAlert];
+- (IBAction)zixun:(UIButton *)sender {
+    zixunViewController *zixunView = [[zixunViewController alloc]init];
     
-    //创建action
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action){
-        NSLog(@"取消");
-    }];
+    UINavigationController *zixun = [[UINavigationController alloc]initWithRootViewController:zixunView];
     
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"前往" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
-        
-        NSLog(@"前往，登陆");
-    }];
-    
-    //添加
-    [alertController addAction:cancelAction];
-    [alertController addAction:okAction];
-    //显示alertController
-    [self presentViewController:alertController animated:YES completion:^{
+    [self presentViewController:zixun animated:YES completion:^{
         
     }];
+
     
 }
+
+
+//#pragma mark  --------设置咨询弹窗--------
+////设置登录咨询弹窗
+//- (IBAction)login:(UIButton *)sender {
+//    //创建alertController
+//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请登录" preferredStyle:UIAlertControllerStyleAlert];
+//    
+//    //创建action
+//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action){
+//        NSLog(@"取消");
+//    }];
+//    
+//    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"前往" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+//        
+//        NSLog(@"前往，登陆");
+//    }];
+//    
+//    //添加
+//    [alertController addAction:cancelAction];
+//    [alertController addAction:okAction];
+//    //显示alertController
+//    [self presentViewController:alertController animated:YES completion:^{
+//        
+//    }];
+//    
+//}
 
 
 #pragma mark  --------右上角弹出弹窗--------
@@ -121,6 +134,7 @@
 //添加用于滚动的scrollView
 -(void)addScrollView{
     
+    //循环的图片数量
      int count = 3;
     
     _myScroller= [[UIScrollView alloc] initWithFrame:CGRectMake(0, 63, 375, 160)];

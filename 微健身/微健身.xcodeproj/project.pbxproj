@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC009C801C3FE625000C2B31 /* zixunTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC009C7E1C3FE625000C2B31 /* zixunTableViewCell.m */; };
+		CC009C811C3FE625000C2B31 /* zixunTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC009C7F1C3FE625000C2B31 /* zixunTableViewCell.xib */; };
+		CC016A0A1C3EA7EC00BEB42D /* zixunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC016A081C3EA7EC00BEB42D /* zixunViewController.m */; };
 		CC07E86D1C223F0C0009F8E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC07E86C1C223F0C0009F8E4 /* ViewController.m */; };
 		CC090E691C0EA12D00537682 /* DataModels.m in Sources */ = {isa = PBXBuildFile; fileRef = CC090E681C0EA12D00537682 /* DataModels.m */; };
 		CC090E6B1C0EEEFB00537682 /* 123.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC090E6A1C0EEEFB00537682 /* 123.plist */; };
@@ -42,6 +45,8 @@
 		CC80296E1C21A73F0041758F /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029651C21A73F0041758F /* 7.png */; };
 		CC80296F1C21A73F0041758F /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029661C21A73F0041758F /* 8.png */; };
 		CC8029701C21A73F0041758F /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029671C21A73F0041758F /* 9.png */; };
+		CC9B1FE61C4134A800729644 /* faxianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9B1FE41C4134A800729644 /* faxianViewController.m */; };
+		CC9B1FE71C4134A800729644 /* faxianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9B1FE51C4134A800729644 /* faxianViewController.xib */; };
 		CCA454341C1EDE6900736D9B /* 功能.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA454331C1EDE6900736D9B /* 功能.png */; };
 		CCA4543C1C1EED8E00736D9B /* jihuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4543B1C1EED8E00736D9B /* jihuaViewController.m */; };
 		CCC9AD491C049513009AB692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC9AD481C049513009AB692 /* main.m */; };
@@ -157,6 +162,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC009C7D1C3FE625000C2B31 /* zixunTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zixunTableViewCell.h; sourceTree = "<group>"; };
+		CC009C7E1C3FE625000C2B31 /* zixunTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zixunTableViewCell.m; sourceTree = "<group>"; };
+		CC009C7F1C3FE625000C2B31 /* zixunTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zixunTableViewCell.xib; sourceTree = "<group>"; };
+		CC016A071C3EA7EC00BEB42D /* zixunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zixunViewController.h; sourceTree = "<group>"; };
+		CC016A081C3EA7EC00BEB42D /* zixunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zixunViewController.m; sourceTree = "<group>"; };
 		CC07E86C1C223F0C0009F8E4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CC090E671C0EA12D00537682 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
 		CC090E681C0EA12D00537682 /* DataModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModels.m; sourceTree = "<group>"; };
@@ -196,6 +206,9 @@
 		CC8029651C21A73F0041758F /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 7.png; path = "健身宝典素材/图片/视图1肌肉按钮/7.png"; sourceTree = SOURCE_ROOT; };
 		CC8029661C21A73F0041758F /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8.png; path = "健身宝典素材/图片/视图1肌肉按钮/8.png"; sourceTree = SOURCE_ROOT; };
 		CC8029671C21A73F0041758F /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9.png; path = "健身宝典素材/图片/视图1肌肉按钮/9.png"; sourceTree = SOURCE_ROOT; };
+		CC9B1FE31C4134A800729644 /* faxianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faxianViewController.h; sourceTree = "<group>"; };
+		CC9B1FE41C4134A800729644 /* faxianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = faxianViewController.m; sourceTree = "<group>"; };
+		CC9B1FE51C4134A800729644 /* faxianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = faxianViewController.xib; sourceTree = "<group>"; };
 		CCA454331C1EDE6900736D9B /* 功能.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "功能.png"; sourceTree = "<group>"; };
 		CCA4543A1C1EED8E00736D9B /* jihuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jihuaViewController.h; sourceTree = "<group>"; };
 		CCA4543B1C1EED8E00736D9B /* jihuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jihuaViewController.m; sourceTree = "<group>"; };
@@ -327,6 +340,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC016A0C1C3EA7FE00BEB42D /* 资讯 */ = {
+			isa = PBXGroup;
+			children = (
+				CC016A071C3EA7EC00BEB42D /* zixunViewController.h */,
+				CC016A081C3EA7EC00BEB42D /* zixunViewController.m */,
+				CC009C7D1C3FE625000C2B31 /* zixunTableViewCell.h */,
+				CC009C7E1C3FE625000C2B31 /* zixunTableViewCell.m */,
+				CC009C7F1C3FE625000C2B31 /* zixunTableViewCell.xib */,
+				CC9B1FE31C4134A800729644 /* faxianViewController.h */,
+				CC9B1FE41C4134A800729644 /* faxianViewController.m */,
+				CC9B1FE51C4134A800729644 /* faxianViewController.xib */,
+			);
+			name = "资讯";
+			sourceTree = "<group>";
+		};
 		CC1E723B1C190AFD0099D882 /* 健身宝典素材 */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +490,7 @@
 				CCC8E1D11C0EA07E00752606 /* 锻炼 */,
 				CCA454381C1EEC7B00736D9B /* 计划 */,
 				CCA454391C1EEC8100736D9B /* 记录 */,
+				CC016A0C1C3EA7FE00BEB42D /* 资讯 */,
 				CC0974D41C190FAE0058CB24 /* Main.storyboard */,
 				CCC9AD461C049513009AB692 /* Supporting Files */,
 			);
@@ -821,6 +850,7 @@
 				CC80296C1C21A73F0041758F /* 5.png in Resources */,
 				CCD7E0441C21408000892903 /* 9_2.png in Resources */,
 				CCD7E0881C21408000892903 /* 4_6.png in Resources */,
+				CC9B1FE71C4134A800729644 /* faxianViewController.xib in Resources */,
 				CCD7E09A1C21408000892903 /* 8_4.png in Resources */,
 				CCD7E0701C21408000892903 /* 5_8.png in Resources */,
 				CC76F2451C1D53E400329DEA /* a_3.jpg in Resources */,
@@ -835,6 +865,7 @@
 				CC32030F1C33B6EA00634F5A /* 资讯.png in Resources */,
 				CCD7E07F1C21408000892903 /* 7_10.png in Resources */,
 				CC80296B1C21A73F0041758F /* 4.png in Resources */,
+				CC009C811C3FE625000C2B31 /* zixunTableViewCell.xib in Resources */,
 				CCD7E0481C21408000892903 /* 9_6.png in Resources */,
 				CCD7E09C1C21408000892903 /* 8_6.png in Resources */,
 				CCD7E04D1C21408000892903 /* 2_1.png in Resources */,
@@ -905,11 +936,14 @@
 				CC0E2E821C2AD01000FA79BB /* AddViewController.m in Sources */,
 				CCA4543C1C1EED8E00736D9B /* jihuaViewController.m in Sources */,
 				CCCE81A31C055670008D9F94 /* CartoonViewController.m in Sources */,
+				CC009C801C3FE625000C2B31 /* zixunTableViewCell.m in Sources */,
 				CC7581121C05B1AF0032B73A /* MuscleViewController.m in Sources */,
 				CC0E2E7F1C2A989B00FA79BB /* jiluViewController.m in Sources */,
+				CC016A0A1C3EA7EC00BEB42D /* zixunViewController.m in Sources */,
 				CC090E691C0EA12D00537682 /* DataModels.m in Sources */,
 				CCE0574D1C3B518B0065FAA9 /* zijihuaViewController.m in Sources */,
 				CCC9AD4C1C049513009AB692 /* AppDelegate.m in Sources */,
+				CC9B1FE61C4134A800729644 /* faxianViewController.m in Sources */,
 				CCC9AD491C049513009AB692 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
