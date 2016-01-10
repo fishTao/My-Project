@@ -8,8 +8,8 @@
 
 #import "faxianViewController.h"
 
-@interface faxianViewController ()
-
+@interface faxianViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property (nonatomic ,strong) UITableView *myTable;
 @end
 
 @implementation faxianViewController
@@ -17,17 +17,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
-    
     UIBarButtonItem *btn = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = btn;
+    
+    
+    _myTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+    _myTable.delegate = self;
+    _myTable.dataSource = self;
+    
+    [self.view addSubview:_myTable];
+    
+    
     
     // Do any additional setup after loading the view from its nib.
 }
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 8;
+}
 
-
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *indertfile = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indertfile];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indertfile];
+    }
+    
+    return cell;
+}
 
 -(void)back:(UIBarButtonItem *)sander{
     [self dismissViewControllerAnimated:YES completion:^{

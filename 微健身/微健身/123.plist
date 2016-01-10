@@ -6,55 +6,73 @@
 		<key>title</key>
 		<string>&lt;肱三头肌锻炼&gt;</string>
 		<key>string</key>
-		<string>林花谢了春红，太匆匆， 无奈朝来寒雨，晚来风。 胭脂泪，相留醉，几时重？自是人生长恨水长东。</string>
+		<string>肱三头肌是运行在你的上臂后侧，从你的肩膀到手肘的肌肉。你的三头肌有三个“头”，或小部分组成的整个肌肉群; 它们构成了几乎三分之二的上臂。</string>
+		<key>image</key>
+		<string>肱二头肌.jpg</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>&lt;肱二头肌锻炼&gt;</string>
 		<key>string</key>
-		<string>艾丝凡</string>
+		<string>肱二头肌位于上臂前侧，整肌呈梭形.肱二头肌有长，短二头。故名‘肱二头肌&apos;长头起于肩胛骨盂上粗隆，短头起于肩胛骨喙突长</string>
+		<key>image</key>
+		<string>肱三头肌.jpg</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>&lt;背部锻炼&gt;</string>
 		<key>string</key>
-		<string>3</string>
+		<string>背肌分为背浅肌、背深肌和背部筋膜。背浅肌分为两层，均起自脊柱的不同部位，止于上肢带骨或自由上肢骨。背深肌在脊柱两侧排列，分为长肌和短肌。</string>
+		<key>image</key>
+		<string>背部.jpg</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>&lt;小腿锻炼&gt;</string>
 		<key>string</key>
-		<string>4</string>
+		<string>小腿肌群最主要是小腿三头肌。    位于小腿后面浅层，特别发达，使小腿后部隆起，它由腓肠肌和比目鱼肌组成。比目鱼肌位于腓肠肌的深层。</string>
+		<key>image</key>
+		<string>小腿.jpg</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>&lt;肩部锻炼&gt;</string>
 		<key>string</key>
-		<string>5</string>
+		<string>肩部主要由三头肌组成，呈三角形。起自锁骨的外侧段、肩峰和肩胛冈，肌束逐渐向外下方集中，止于肱骨三角肌粗隆。肱骨上端由于三角肌的覆盖，使肩关节呈圆隆形。</string>
+		<key>image</key>
+		<string>肩部.jpg</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>&lt;胸肌锻炼&gt;</string>
 		<key>string</key>
-		<string>6</string>
+		<string>由左右两部分构成，又称胸大肌。  近固定，收缩时，可使肩关节内收、旋内和屈。远固定，拉躯干向手臂靠拢。胸肌还可分为胸上肢肌和胸固有肌。</string>
+		<key>image</key>
+		<string>胸肌.jpg</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>&lt;小臂锻炼&gt;</string>
 		<key>string</key>
-		<string>7</string>
+		<string>前臂肌位于尺、桡骨的周围，多为长棱形肌，可分为前、后两群。 前群为屈肌群；后群为伸肌群。</string>
+		<key>image</key>
+		<string>前臂.jpg</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>&lt;腹肌锻炼&gt;</string>
 		<key>string</key>
-		<string>人家就</string>
+		<string>包括腹直肌、腹外斜肌，腹内斜肌和腹横肌。  当它们收缩时，可以使躯干弯曲及旋转，并可以防止骨盆前倾。</string>
+		<key>image</key>
+		<string>腹肌.jpg</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>&lt;大腿肌肉锻炼&gt;</string>
 		<key>string</key>
-		<string>发帖就开了</string>
+		<string>大腿肌位于股骨周围，可分为前群、后群和内侧群。 大腿肌肉是人体力量最强、体积最大的肌群之一，不但对一个人的全身力量至关重要。大腿肌肉包括前面的股四头肌、后面的股二头肌。两侧的内收与外展肌。</string>
+		<key>image</key>
+		<string>大腿.jpg</string>
 	</dict>
 </array>
 </plist>

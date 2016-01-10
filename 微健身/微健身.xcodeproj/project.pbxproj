@@ -24,13 +24,21 @@
 		CC1E728F1C190AFD0099D882 /* 背景1.png in Resources */ = {isa = PBXBuildFile; fileRef = CC1E72631C190AFD0099D882 /* 背景1.png */; };
 		CC1E72981C190B3B0099D882 /* 动画.png in Resources */ = {isa = PBXBuildFile; fileRef = CC1E72971C190B3B0099D882 /* 动画.png */; };
 		CC1E729A1C190B730099D882 /* 11_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC1E72991C190B730099D882 /* 11_1.jpg */; };
-		CC32030A1C33B6EA00634F5A /* 分享.png in Resources */ = {isa = PBXBuildFile; fileRef = CC3203031C33B6EA00634F5A /* 分享.png */; };
-		CC32030B1C33B6EA00634F5A /* 更新.png in Resources */ = {isa = PBXBuildFile; fileRef = CC3203041C33B6EA00634F5A /* 更新.png */; };
-		CC32030C1C33B6EA00634F5A /* 美图.png in Resources */ = {isa = PBXBuildFile; fileRef = CC3203051C33B6EA00634F5A /* 美图.png */; };
-		CC32030D1C33B6EA00634F5A /* 菜单.png in Resources */ = {isa = PBXBuildFile; fileRef = CC3203061C33B6EA00634F5A /* 菜单.png */; };
-		CC32030E1C33B6EA00634F5A /* 设置.png in Resources */ = {isa = PBXBuildFile; fileRef = CC3203071C33B6EA00634F5A /* 设置.png */; };
-		CC32030F1C33B6EA00634F5A /* 资讯.png in Resources */ = {isa = PBXBuildFile; fileRef = CC3203081C33B6EA00634F5A /* 资讯.png */; };
-		CC3203101C33B6EA00634F5A /* 退出.png in Resources */ = {isa = PBXBuildFile; fileRef = CC3203091C33B6EA00634F5A /* 退出.png */; };
+		CC7480C31C42576A00D3ECC7 /* 设置.png in Resources */ = {isa = PBXBuildFile; fileRef = CC7480BE1C42576A00D3ECC7 /* 设置.png */; };
+		CC7480C41C42576A00D3ECC7 /* 右.png in Resources */ = {isa = PBXBuildFile; fileRef = CC7480BF1C42576A00D3ECC7 /* 右.png */; };
+		CC7480C51C42576A00D3ECC7 /* 右高亮.png in Resources */ = {isa = PBXBuildFile; fileRef = CC7480C01C42576A00D3ECC7 /* 右高亮.png */; };
+		CC7480C61C42576A00D3ECC7 /* 左.png in Resources */ = {isa = PBXBuildFile; fileRef = CC7480C11C42576A00D3ECC7 /* 左.png */; };
+		CC7480C71C42576A00D3ECC7 /* 左高亮.png in Resources */ = {isa = PBXBuildFile; fileRef = CC7480C21C42576A00D3ECC7 /* 左高亮.png */; };
+		CC7480E31C4285C000D3ECC7 /* 背部.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC7480DA1C4285C000D3ECC7 /* 背部.jpg */; };
+		CC7480E41C4285C000D3ECC7 /* 大腿.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC7480DB1C4285C000D3ECC7 /* 大腿.jpg */; };
+		CC7480E51C4285C000D3ECC7 /* 腹肌.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC7480DC1C4285C000D3ECC7 /* 腹肌.jpg */; };
+		CC7480E61C4285C000D3ECC7 /* 肱二头肌.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC7480DD1C4285C000D3ECC7 /* 肱二头肌.jpg */; };
+		CC7480E71C4285C000D3ECC7 /* 肱三头肌.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC7480DE1C4285C000D3ECC7 /* 肱三头肌.jpg */; };
+		CC7480E81C4285C000D3ECC7 /* 肩部.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC7480DF1C4285C000D3ECC7 /* 肩部.jpg */; };
+		CC7480E91C4285C000D3ECC7 /* 前臂.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC7480E01C4285C000D3ECC7 /* 前臂.jpg */; };
+		CC7480EA1C4285C000D3ECC7 /* 小腿.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC7480E11C4285C000D3ECC7 /* 小腿.jpg */; };
+		CC7480EB1C4285C000D3ECC7 /* 胸肌.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC7480E21C4285C000D3ECC7 /* 胸肌.jpg */; };
+		CC7480ED1C4288AF00D3ECC7 /* zijihuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7480EC1C4288AF00D3ECC7 /* zijihuaViewController.m */; };
 		CC7581121C05B1AF0032B73A /* MuscleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7581111C05B1AF0032B73A /* MuscleViewController.m */; };
 		CC76F2431C1D53E400329DEA /* a_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC76F2391C1D53E400329DEA /* a_1.jpg */; };
 		CC76F2441C1D53E400329DEA /* a_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC76F23A1C1D53E400329DEA /* a_2.jpg */; };
@@ -145,8 +153,6 @@
 		CCD7E09E1C21408000892903 /* 8_8.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7E0331C21408000892903 /* 8_8.png */; };
 		CCD7E09F1C21408000892903 /* 8_9.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7E0341C21408000892903 /* 8_9.png */; };
 		CCD7E0A21C21408000892903 /* 8_10.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7E0371C21408000892903 /* 8_10.png */; };
-		CCE0574D1C3B518B0065FAA9 /* zijihuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0574B1C3B518B0065FAA9 /* zijihuaViewController.m */; };
-		CCE0574E1C3B518B0065FAA9 /* zijihuaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCE0574C1C3B518B0065FAA9 /* zijihuaViewController.xib */; };
 		CCE0578B1C3BE7BC0065FAA9 /* 11_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE0578A1C3BE7BC0065FAA9 /* 11_3.jpg */; };
 		CCE0578D1C3BF5320065FAA9 /* 11_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE0578C1C3BF5320065FAA9 /* 11_2.jpg */; };
 /* End PBXBuildFile section */
@@ -184,13 +190,21 @@
 		CC1E72631C190AFD0099D882 /* 背景1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景1.png"; sourceTree = "<group>"; };
 		CC1E72971C190B3B0099D882 /* 动画.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "动画.png"; sourceTree = "<group>"; };
 		CC1E72991C190B730099D882 /* 11_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11_1.jpg; sourceTree = "<group>"; };
-		CC3203031C33B6EA00634F5A /* 分享.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享.png"; sourceTree = "<group>"; };
-		CC3203041C33B6EA00634F5A /* 更新.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更新.png"; sourceTree = "<group>"; };
-		CC3203051C33B6EA00634F5A /* 美图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美图.png"; sourceTree = "<group>"; };
-		CC3203061C33B6EA00634F5A /* 菜单.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "菜单.png"; sourceTree = "<group>"; };
-		CC3203071C33B6EA00634F5A /* 设置.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置.png"; sourceTree = "<group>"; };
-		CC3203081C33B6EA00634F5A /* 资讯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "资讯.png"; sourceTree = "<group>"; };
-		CC3203091C33B6EA00634F5A /* 退出.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "退出.png"; sourceTree = "<group>"; };
+		CC7480BE1C42576A00D3ECC7 /* 设置.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置.png"; sourceTree = "<group>"; };
+		CC7480BF1C42576A00D3ECC7 /* 右.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "右.png"; sourceTree = "<group>"; };
+		CC7480C01C42576A00D3ECC7 /* 右高亮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "右高亮.png"; sourceTree = "<group>"; };
+		CC7480C11C42576A00D3ECC7 /* 左.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左.png"; sourceTree = "<group>"; };
+		CC7480C21C42576A00D3ECC7 /* 左高亮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左高亮.png"; sourceTree = "<group>"; };
+		CC7480DA1C4285C000D3ECC7 /* 背部.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "背部.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/背部.jpg"; sourceTree = SOURCE_ROOT; };
+		CC7480DB1C4285C000D3ECC7 /* 大腿.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "大腿.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/大腿.jpg"; sourceTree = SOURCE_ROOT; };
+		CC7480DC1C4285C000D3ECC7 /* 腹肌.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "腹肌.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/腹肌.jpg"; sourceTree = SOURCE_ROOT; };
+		CC7480DD1C4285C000D3ECC7 /* 肱二头肌.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "肱二头肌.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/肱二头肌.jpg"; sourceTree = SOURCE_ROOT; };
+		CC7480DE1C4285C000D3ECC7 /* 肱三头肌.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "肱三头肌.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/肱三头肌.jpg"; sourceTree = SOURCE_ROOT; };
+		CC7480DF1C4285C000D3ECC7 /* 肩部.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "肩部.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/肩部.jpg"; sourceTree = SOURCE_ROOT; };
+		CC7480E01C4285C000D3ECC7 /* 前臂.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "前臂.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/前臂.jpg"; sourceTree = SOURCE_ROOT; };
+		CC7480E11C4285C000D3ECC7 /* 小腿.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "小腿.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/小腿.jpg"; sourceTree = SOURCE_ROOT; };
+		CC7480E21C4285C000D3ECC7 /* 胸肌.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "胸肌.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/胸肌.jpg"; sourceTree = SOURCE_ROOT; };
+		CC7480EC1C4288AF00D3ECC7 /* zijihuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zijihuaViewController.m; sourceTree = "<group>"; };
 		CC7581101C05B1AF0032B73A /* MuscleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuscleViewController.h; sourceTree = "<group>"; };
 		CC7581111C05B1AF0032B73A /* MuscleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.c.objc; path = MuscleViewController.m; sourceTree = "<group>"; };
 		CC76F2391C1D53E400329DEA /* a_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a_1.jpg; sourceTree = "<group>"; };
@@ -316,8 +330,6 @@
 		CCD7E0341C21408000892903 /* 8_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_9.png; sourceTree = "<group>"; };
 		CCD7E0371C21408000892903 /* 8_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_10.png; sourceTree = "<group>"; };
 		CCE0574A1C3B518B0065FAA9 /* zijihuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zijihuaViewController.h; sourceTree = "<group>"; };
-		CCE0574B1C3B518B0065FAA9 /* zijihuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zijihuaViewController.m; sourceTree = "<group>"; };
-		CCE0574C1C3B518B0065FAA9 /* zijihuaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zijihuaViewController.xib; sourceTree = "<group>"; };
 		CCE0578A1C3BE7BC0065FAA9 /* 11_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11_3.jpg; sourceTree = "<group>"; };
 		CCE0578C1C3BF5320065FAA9 /* 11_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11_2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -395,6 +407,15 @@
 				CC8029651C21A73F0041758F /* 7.png */,
 				CC8029661C21A73F0041758F /* 8.png */,
 				CC8029671C21A73F0041758F /* 9.png */,
+				CC7480DA1C4285C000D3ECC7 /* 背部.jpg */,
+				CC7480DB1C4285C000D3ECC7 /* 大腿.jpg */,
+				CC7480DC1C4285C000D3ECC7 /* 腹肌.jpg */,
+				CC7480DD1C4285C000D3ECC7 /* 肱二头肌.jpg */,
+				CC7480DE1C4285C000D3ECC7 /* 肱三头肌.jpg */,
+				CC7480DF1C4285C000D3ECC7 /* 肩部.jpg */,
+				CC7480E01C4285C000D3ECC7 /* 前臂.jpg */,
+				CC7480E11C4285C000D3ECC7 /* 小腿.jpg */,
+				CC7480E21C4285C000D3ECC7 /* 胸肌.jpg */,
 			);
 			name = "视图1肌肉按钮";
 			path = "主界面/视图1肌肉按钮";
@@ -416,13 +437,11 @@
 		CC3203021C33B6EA00634F5A /* 图标 */ = {
 			isa = PBXGroup;
 			children = (
-				CC3203031C33B6EA00634F5A /* 分享.png */,
-				CC3203041C33B6EA00634F5A /* 更新.png */,
-				CC3203051C33B6EA00634F5A /* 美图.png */,
-				CC3203061C33B6EA00634F5A /* 菜单.png */,
-				CC3203071C33B6EA00634F5A /* 设置.png */,
-				CC3203081C33B6EA00634F5A /* 资讯.png */,
-				CC3203091C33B6EA00634F5A /* 退出.png */,
+				CC7480BE1C42576A00D3ECC7 /* 设置.png */,
+				CC7480BF1C42576A00D3ECC7 /* 右.png */,
+				CC7480C01C42576A00D3ECC7 /* 右高亮.png */,
+				CC7480C11C42576A00D3ECC7 /* 左.png */,
+				CC7480C21C42576A00D3ECC7 /* 左高亮.png */,
 			);
 			name = "图标";
 			path = "../微健身/图标";
@@ -434,8 +453,7 @@
 				CCA4543A1C1EED8E00736D9B /* jihuaViewController.h */,
 				CCA4543B1C1EED8E00736D9B /* jihuaViewController.m */,
 				CCE0574A1C3B518B0065FAA9 /* zijihuaViewController.h */,
-				CCE0574B1C3B518B0065FAA9 /* zijihuaViewController.m */,
-				CCE0574C1C3B518B0065FAA9 /* zijihuaViewController.xib */,
+				CC7480EC1C4288AF00D3ECC7 /* zijihuaViewController.m */,
 			);
 			name = "计划";
 			sourceTree = "<group>";
@@ -454,14 +472,15 @@
 		CCC8E1D11C0EA07E00752606 /* 锻炼 */ = {
 			isa = PBXGroup;
 			children = (
-				CC090E671C0EA12D00537682 /* DataModels.h */,
-				CC090E681C0EA12D00537682 /* DataModels.m */,
 				CCC9AD4D1C049513009AB692 /* ViewController.h */,
 				CC07E86C1C223F0C0009F8E4 /* ViewController.m */,
 				CCCE81A11C055670008D9F94 /* CartoonViewController.h */,
 				CCCE81A21C055670008D9F94 /* CartoonViewController.m */,
 				CC7581101C05B1AF0032B73A /* MuscleViewController.h */,
 				CC7581111C05B1AF0032B73A /* MuscleViewController.m */,
+				CC090E671C0EA12D00537682 /* DataModels.h */,
+				CC090E681C0EA12D00537682 /* DataModels.m */,
+				CC0974D41C190FAE0058CB24 /* Main.storyboard */,
 			);
 			name = "锻炼";
 			sourceTree = "<group>";
@@ -491,7 +510,6 @@
 				CCA454381C1EEC7B00736D9B /* 计划 */,
 				CCA454391C1EEC8100736D9B /* 记录 */,
 				CC016A0C1C3EA7FE00BEB42D /* 资讯 */,
-				CC0974D41C190FAE0058CB24 /* Main.storyboard */,
 				CCC9AD461C049513009AB692 /* Supporting Files */,
 			);
 			path = "微健身";
@@ -792,8 +810,8 @@
 				CC1E728F1C190AFD0099D882 /* 背景1.png in Resources */,
 				CCD7E03D1C21408000892903 /* 3_5.png in Resources */,
 				CCD7E07E1C21408000892903 /* 7_9.png in Resources */,
-				CC32030C1C33B6EA00634F5A /* 美图.png in Resources */,
 				CCD7E0951C21408000892903 /* 6_9.png in Resources */,
+				CC7480E61C4285C000D3ECC7 /* 肱二头肌.jpg in Resources */,
 				CCD7E06B1C21408000892903 /* 5_3.png in Resources */,
 				CCD7E08E1C21408000892903 /* 6_2.png in Resources */,
 				CCD7E0641C21408000892903 /* 1_8.png in Resources */,
@@ -809,17 +827,18 @@
 				CCD7E05E1C21408000892903 /* 1_2.png in Resources */,
 				CCD7E0931C21408000892903 /* 6_7.png in Resources */,
 				CCD7E04C1C21408000892903 /* 9_10.png in Resources */,
+				CC7480E71C4285C000D3ECC7 /* 肱三头肌.jpg in Resources */,
 				CCD7E05F1C21408000892903 /* 1_3.png in Resources */,
 				CC1E727D1C190AFD0099D882 /* 肌肉图.png in Resources */,
 				CCD7E0961C21408000892903 /* 6_10.png in Resources */,
 				CCD7E04E1C21408000892903 /* 2_2.png in Resources */,
 				CCD7E08C1C21408000892903 /* 4_10.png in Resources */,
 				CC8029691C21A73F0041758F /* 2.png in Resources */,
+				CC7480EA1C4285C000D3ECC7 /* 小腿.jpg in Resources */,
 				CCD7E07D1C21408000892903 /* 7_8.png in Resources */,
 				CC76F2461C1D53E400329DEA /* d.jpg in Resources */,
 				CCD7E0431C21408000892903 /* 9_1.png in Resources */,
 				CCD7E04A1C21408000892903 /* 9_8.png in Resources */,
-				CC32030B1C33B6EA00634F5A /* 更新.png in Resources */,
 				CC80296A1C21A73F0041758F /* 3.png in Resources */,
 				CCD7E0561C21408000892903 /* 2_10.png in Resources */,
 				CCD7E0841C21408000892903 /* 4_2.png in Resources */,
@@ -829,10 +848,11 @@
 				CCD7E09B1C21408000892903 /* 8_5.png in Resources */,
 				CCD7E0631C21408000892903 /* 1_7.png in Resources */,
 				CCD7E03F1C21408000892903 /* 3_7.png in Resources */,
+				CC7480E81C4285C000D3ECC7 /* 肩部.jpg in Resources */,
 				CCD7E0741C21408000892903 /* 7_3.png in Resources */,
 				CCD7E0751C21408000892903 /* 7_4.png in Resources */,
 				CC090E6B1C0EEEFB00537682 /* 123.plist in Resources */,
-				CC32030A1C33B6EA00634F5A /* 分享.png in Resources */,
+				CC7480C51C42576A00D3ECC7 /* 右高亮.png in Resources */,
 				CCD7E0711C21408000892903 /* 5_9.png in Resources */,
 				CCD7E0971C21408000892903 /* 8_1.png in Resources */,
 				CC8029701C21A73F0041758F /* 9.png in Resources */,
@@ -854,15 +874,14 @@
 				CCD7E09A1C21408000892903 /* 8_4.png in Resources */,
 				CCD7E0701C21408000892903 /* 5_8.png in Resources */,
 				CC76F2451C1D53E400329DEA /* a_3.jpg in Resources */,
-				CC3203101C33B6EA00634F5A /* 退出.png in Resources */,
 				CCD7E09F1C21408000892903 /* 8_9.png in Resources */,
 				CCD7E0501C21408000892903 /* 2_4.png in Resources */,
 				CC1E727A1C190AFD0099D882 /* 主页面.jpg in Resources */,
+				CC7480E91C4285C000D3ECC7 /* 前臂.jpg in Resources */,
 				CCD7E08A1C21408000892903 /* 4_8.png in Resources */,
 				CCD7E08D1C21408000892903 /* 6_1.png in Resources */,
 				CCD7E03E1C21408000892903 /* 3_6.png in Resources */,
 				CCD7E0391C21408000892903 /* 3_1.png in Resources */,
-				CC32030F1C33B6EA00634F5A /* 资讯.png in Resources */,
 				CCD7E07F1C21408000892903 /* 7_10.png in Resources */,
 				CC80296B1C21A73F0041758F /* 4.png in Resources */,
 				CC009C811C3FE625000C2B31 /* zixunTableViewCell.xib in Resources */,
@@ -871,6 +890,7 @@
 				CCD7E04D1C21408000892903 /* 2_1.png in Resources */,
 				CCD7E0731C21408000892903 /* 7_2.png in Resources */,
 				CCD7E0911C21408000892903 /* 6_5.png in Resources */,
+				CC7480EB1C4285C000D3ECC7 /* 胸肌.jpg in Resources */,
 				CCD7E0831C21408000892903 /* 4_1.png in Resources */,
 				CCE0578D1C3BF5320065FAA9 /* 11_2.jpg in Resources */,
 				CCD7E0491C21408000892903 /* 9_7.png in Resources */,
@@ -879,32 +899,35 @@
 				CCD7E0861C21408000892903 /* 4_4.png in Resources */,
 				CCD7E08F1C21408000892903 /* 6_3.png in Resources */,
 				CCD7E0471C21408000892903 /* 9_5.png in Resources */,
+				CC7480E31C4285C000D3ECC7 /* 背部.jpg in Resources */,
 				CCD7E0451C21408000892903 /* 9_3.png in Resources */,
 				CCD7E0991C21408000892903 /* 8_3.png in Resources */,
+				CC7480E41C4285C000D3ECC7 /* 大腿.jpg in Resources */,
 				CCD7E0901C21408000892903 /* 6_4.png in Resources */,
 				CCD7E0421C21408000892903 /* 3_10.png in Resources */,
 				CC1E72871C190AFD0099D882 /* 计划.png in Resources */,
-				CC32030E1C33B6EA00634F5A /* 设置.png in Resources */,
 				CCE0578B1C3BE7BC0065FAA9 /* 11_3.jpg in Resources */,
+				CC7480C31C42576A00D3ECC7 /* 设置.png in Resources */,
 				CC1E72981C190B3B0099D882 /* 动画.png in Resources */,
 				CC76F2441C1D53E400329DEA /* a_2.jpg in Resources */,
 				CCD7E0511C21408000892903 /* 2_5.png in Resources */,
 				CCD7E04B1C21408000892903 /* 9_9.png in Resources */,
-				CC32030D1C33B6EA00634F5A /* 菜单.png in Resources */,
 				CCD7E0981C21408000892903 /* 8_2.png in Resources */,
 				CCD7E0801C21408000892903 /* 5_10.png in Resources */,
 				CCA454341C1EDE6900736D9B /* 功能.png in Resources */,
-				CCE0574E1C3B518B0065FAA9 /* zijihuaViewController.xib in Resources */,
+				CC7480C41C42576A00D3ECC7 /* 右.png in Resources */,
 				CC1E727C1C190AFD0099D882 /* 咨询.png in Resources */,
 				CC1E729A1C190B730099D882 /* 11_1.jpg in Resources */,
 				CCD7E0871C21408000892903 /* 4_5.png in Resources */,
 				CCD7E0401C21408000892903 /* 3_8.png in Resources */,
 				CCD7E03C1C21408000892903 /* 3_4.png in Resources */,
 				CCD7E0601C21408000892903 /* 1_4.png in Resources */,
+				CC7480E51C4285C000D3ECC7 /* 腹肌.jpg in Resources */,
 				CC76F2431C1D53E400329DEA /* a_1.jpg in Resources */,
 				CCD7E09D1C21408000892903 /* 8_7.png in Resources */,
 				CCD7E06D1C21408000892903 /* 5_5.png in Resources */,
 				CCD7E0531C21408000892903 /* 2_7.png in Resources */,
+				CC7480C71C42576A00D3ECC7 /* 左高亮.png in Resources */,
 				CCC9AD541C049513009AB692 /* Images.xcassets in Resources */,
 				CC8029681C21A73F0041758F /* 1.png in Resources */,
 				CCD7E0521C21408000892903 /* 2_6.png in Resources */,
@@ -912,6 +935,7 @@
 				CCD7E0411C21408000892903 /* 3_9.png in Resources */,
 				CCD7E08B1C21408000892903 /* 4_9.png in Resources */,
 				CC1E72881C190AFD0099D882 /* 记录.png in Resources */,
+				CC7480C61C42576A00D3ECC7 /* 左.png in Resources */,
 				CCD7E03A1C21408000892903 /* 3_2.png in Resources */,
 				CCD7E06A1C21408000892903 /* 5_2.png in Resources */,
 				CCD7E03B1C21408000892903 /* 3_3.png in Resources */,
@@ -941,8 +965,8 @@
 				CC0E2E7F1C2A989B00FA79BB /* jiluViewController.m in Sources */,
 				CC016A0A1C3EA7EC00BEB42D /* zixunViewController.m in Sources */,
 				CC090E691C0EA12D00537682 /* DataModels.m in Sources */,
-				CCE0574D1C3B518B0065FAA9 /* zijihuaViewController.m in Sources */,
 				CCC9AD4C1C049513009AB692 /* AppDelegate.m in Sources */,
+				CC7480ED1C4288AF00D3ECC7 /* zijihuaViewController.m in Sources */,
 				CC9B1FE61C4134A800729644 /* faxianViewController.m in Sources */,
 				CCC9AD491C049513009AB692 /* main.m in Sources */,
 			);

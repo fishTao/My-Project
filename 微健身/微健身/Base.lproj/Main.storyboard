@@ -5,26 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--Jihua View Controller-->
-        <scene sceneID="Wt1-9i-UvX">
-            <objects>
-                <viewController id="wj8-A4-57M" customClass="jihuaViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="s2I-kC-VlW"/>
-                        <viewControllerLayoutGuide type="bottom" id="90n-kX-wP1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fdm-qZ-sHX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                    </view>
-                    <navigationItem key="navigationItem" id="sv3-0Z-F0V"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9f3-wu-7VA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="996.5" y="1363.5"/>
-        </scene>
         <!--微健身-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -232,26 +212,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CDM-Y5-h4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2060.5" y="2310.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Ur5-7V-GsH">
-            <objects>
-                <navigationController storyboardIdentifier="myID" automaticallyAdjustsScrollViewInsets="NO" id="OJa-L5-vGm" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iEG-G7-FXs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="wj8-A4-57M" kind="relationship" relationship="rootViewController" id="MZj-YX-zrk"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3kB-QC-82g" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="486.5" y="1362.5"/>
         </scene>
         <!--菜单-->
         <scene sceneID="axA-MG-fYe">

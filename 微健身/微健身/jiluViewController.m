@@ -70,9 +70,6 @@
 }
 
 
-
-
-
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *identfier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identfier];

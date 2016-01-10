@@ -37,10 +37,14 @@
     _myTable.delegate = self;
     _myTable.dataSource = self;
     _myTable.rowHeight = 70;
+
     
     [self.view addSubview:_myTable];
 
-    
+    UIImageView *img = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    img.image = [UIImage imageNamed:@"背景1"];
+    img.alpha = 0.7;
+    _myTable.backgroundView = img;
     // Do any additional setup after loading the view.
 }
 
@@ -62,6 +66,7 @@
     return cell;
     
 }
+
 // ====添加删除表格
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {

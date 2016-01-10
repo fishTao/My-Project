@@ -12,7 +12,7 @@
 
 @interface MuscleViewController ()<UIScrollViewDelegate>
 @property (nonatomic ,strong) NSArray *image;
-
+@property (nonatomic ,strong) UIPageControl *page;
 @end
 
 @implementation MuscleViewController
@@ -56,11 +56,22 @@
    //设置scrollView的图片
       NSString *imageName = [NSString stringWithFormat:@"%ld_%d",_flag-100,i + 1];
       imageView.image = [UIImage imageNamed:imageName];
-   
+      
+      //取消滚动条
+      scrollview.showsHorizontalScrollIndicator = NO;
+
+      _page = [[UIPageControl alloc] initWithFrame:CGRectMake(185, 400, 0, 25)];
+      
+      _page.numberOfPages = 10;
+      _page.currentPageIndicatorTintColor = [UIColor grayColor];
+      _page.pageIndicatorTintColor = [UIColor groupTableViewBackgroundColor];
+      [self.view addSubview:_page];
+      
+
    }
 #pragma mark ========文本框==========
     //创建一个文本框，用来陈述图片的锻炼方法。
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(40, 440, 300, 80)];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(40, 440, 300, 120)];
     label.backgroundColor = [UIColor grayColor];
 
    label.text = [NSString stringWithFormat:model.string];
@@ -70,7 +81,7 @@
     //文本自适应大小
     label.adjustsFontSizeToFitWidth = YES;
      //文本最多行数。
-    label.numberOfLines = 4;
+    label.numberOfLines = 10;
    
     label.textColor = [UIColor orangeColor];
     //设置文本框为透明。
@@ -81,6 +92,17 @@
     // Do any additional setup after loading the view.
 }
 
+
+
+
+
+// 让pagecontroller跟随scroller移动
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+   int page1 = (scrollView.contentOffset.x + scrollView.frame.size.width / 2) / scrollView.frame.size.width;
+   self.page.currentPage = page1;
+}
 //给按钮添加一个返回的方法
 - (void)click:(UIButton *)sender{
     [self dismissViewControllerAnimated:YES completion:^{

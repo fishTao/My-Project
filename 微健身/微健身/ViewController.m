@@ -91,32 +91,6 @@
 }
 
 
-//#pragma mark  --------设置咨询弹窗--------
-////设置登录咨询弹窗
-//- (IBAction)login:(UIButton *)sender {
-//    //创建alertController
-//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请登录" preferredStyle:UIAlertControllerStyleAlert];
-//    
-//    //创建action
-//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action){
-//        NSLog(@"取消");
-//    }];
-//    
-//    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"前往" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
-//        
-//        NSLog(@"前往，登陆");
-//    }];
-//    
-//    //添加
-//    [alertController addAction:cancelAction];
-//    [alertController addAction:okAction];
-//    //显示alertController
-//    [self presentViewController:alertController animated:YES completion:^{
-//        
-//    }];
-//    
-//}
-
 
 #pragma mark  --------右上角弹出弹窗--------
 - (IBAction)set:(UIBarButtonItem *)sender {
