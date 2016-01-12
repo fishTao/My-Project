@@ -18,10 +18,13 @@
 
 @implementation jihuaViewController
 
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _array = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9"];
+    _array = @[@"  肱二头肌",@"  肱三头肌",@"  背部",@"  小腿",@"  肩部",@"  胸肌",@"  前臂",@"  腹肌",@"  大腿"];
     
     
     //设置背景色
@@ -36,7 +39,7 @@
     _myTable = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     _myTable.delegate = self;
     _myTable.dataSource = self;
-    _myTable.rowHeight = 70;
+    _myTable.rowHeight = 67;
 
     
     [self.view addSubview:_myTable];

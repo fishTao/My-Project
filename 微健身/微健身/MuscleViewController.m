@@ -11,7 +11,7 @@
 #import "DataModels.h"
 
 @interface MuscleViewController ()<UIScrollViewDelegate>
-@property (nonatomic ,strong) NSArray *image;
+
 @property (nonatomic ,strong) UIPageControl *page;
 @end
 
@@ -31,7 +31,7 @@
 
 
    ////设置标题栏
-    self.title = [NSString stringWithFormat:model.title];
+    self.title = model.title;
    
    
 #pragma mark  ========创建scrollView==========
@@ -74,7 +74,7 @@
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(40, 440, 300, 120)];
     label.backgroundColor = [UIColor grayColor];
 
-   label.text = [NSString stringWithFormat:model.string];
+   label.text = model.string;
     label.font = [UIFont fontWithName:@"Arial" size:18];
      //文本居中
     //label.textAlignment = YES;

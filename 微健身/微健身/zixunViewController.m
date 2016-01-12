@@ -9,11 +9,12 @@
 #import "zixunViewController.h"
 #import "zixunTableViewCell.h"
 #import "faxianViewController.h"
+#import "DataModels.h"
 
 @interface zixunViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
 @property (nonatomic ,strong) UIPageControl *page;
 @property (nonatomic ,strong) UITableView *myTable;
-@property (nonatomic ,strong) NSArray *array;
+@property (nonatomic ,strong) NSMutableArray *array;
 @end
 
 @implementation zixunViewController
@@ -26,12 +27,28 @@
     self.title = @"资讯";
     
 //    _array = @[@"1234",@"qwer",@"1qw12344",@"wdfgh"];
+
+    
+    
+#pragma mark  ==========创建TableVi============
+    _myTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 375, 667) style:UITableViewStylePlain];
+    _myTable.delegate = self;
+    _myTable.dataSource = self;
+    
+    _myTable.rowHeight = 80;
+
+    
+    [self.view addSubview:_myTable];
+    
+    
+    UIView *views = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 375, 300)];
+    _myTable.tableHeaderView = views;
     
 #pragma mark  =========设置scrollerView==========
     UIScrollView *scrollerview = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 375, 300)];
     
-    
-    
+    [views addSubview:scrollerview];
+
     //设置contenSize
     scrollerview.contentSize = CGSizeMake(scrollerview.frame.size.width *6 , 300);
     //设置分页
@@ -61,7 +78,7 @@
     _page = [[UIPageControl alloc] initWithFrame:CGRectMake(167, 200, 40, 25)];
     self.page.numberOfPages = 6;
 
-    [scrollerview addSubview:_page];
+    [views addSubview:_page];
 #pragma mark     ========设置scrollerView上面的View以及四个按钮========
     //设置scrollerView上面的按钮。
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 220, 375, 80)];
@@ -69,89 +86,89 @@
     //设置View透明度
     view.alpha = 0.8;
     
-    [scrollerview addSubview:view];
-//
-//   //1、饮食按钮。
-//    UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(30, 230, 60, 60)];
-//    //设置为圆
-//    btn1.layer.cornerRadius = 60/2.0;
-//    btn1.layer.masksToBounds = 60/2.0;
-//    //设置边框颜色
-//    btn1.layer.borderColor = [UIColor whiteColor].CGColor;
-//    //边框宽度
-//    btn1.layer.borderWidth = 1.5;
-//    //字体颜色
-//    [btn1 setTintColor:[UIColor whiteColor]];
-//    //字体阴影颜色
-//    [btn1 setTitleShadowColor:[UIColor grayColor] forState:UIControlStateNormal];
-//    
-//    [btn1 setTitle:@"饮食" forState:UIControlStateNormal];
-//    [btn1 setBackgroundImage:[UIImage imageNamed:@"功能"] forState:UIControlStateHighlighted];
-////    [btn1 setImage:[UIImage imageNamed:@"功能"]forState:UIControlStateHighlighted];
-//    //设置跳转
-//    [btn1 addTarget:self action:@selector(yinshi:) forControlEvents:UIControlEventTouchDown];
-//    
-//    [self.view addSubview:btn1];
-//    
-//    //2、问答按钮
-//    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(115, 230, 60, 60)];
-//    
-//    btn2.layer.cornerRadius = 60/2.0;
-//    btn2.layer.masksToBounds = 60/2.0;
-//    
-//    btn2.layer.borderColor = [UIColor whiteColor].CGColor;
-//    btn2.layer.borderWidth = 1.5;
-//    
-//    [btn2 setTitle:@"问答" forState:UIControlStateNormal];
-//    [btn2 setBackgroundImage:[UIImage imageNamed:@"功能"] forState:UIControlStateHighlighted];
-////    [btn2 setImage:[UIImage imageNamed:@"功能"]forState:UIControlStateHighlighted];
-//    [btn2 setTintColor:[UIColor whiteColor]];
-//    [btn2 setTitleShadowColor:[UIColor grayColor] forState:UIControlStateNormal];
-//    
-//    [btn2 addTarget:self action:@selector(wenda:) forControlEvents:UIControlEventTouchDown];
-//    
-//    [self.view addSubview:btn2];
-//    //3、励志按钮
-//    UIButton *btn3 = [[UIButton alloc] initWithFrame:CGRectMake(200, 230, 60, 60)];
-//    
-//    btn3.layer.cornerRadius = 60/2.0;
-//    btn3.layer.masksToBounds = 60/2.0;
-//    
-//    btn3.layer.borderColor = [UIColor whiteColor].CGColor;
-//    btn3.layer.borderWidth = 1.5;
-//    
-//    [btn3 setTitle:@"励志" forState:UIControlStateNormal];
-//    [btn3 setBackgroundImage:[UIImage imageNamed:@"功能"] forState:UIControlStateHighlighted];
-////    [btn3 setImage:[UIImage imageNamed:@"功能"]forState:UIControlStateHighlighted];
-//    [btn3 setTintColor:[UIColor whiteColor]];
-//    [btn3 setTitleShadowColor:[UIColor grayColor] forState:UIControlStateNormal];
-//    
-//    [btn3 addTarget:self action:@selector(lizhi:) forControlEvents:UIControlEventTouchDown];
-//    
-//    
-//    [self.view addSubview:btn3];
-//
-//    //4、技巧按钮
-//    UIButton *btn4 = [[UIButton alloc] initWithFrame:CGRectMake(285, 230, 60, 60)];
-//    
-//    btn4.layer.cornerRadius = 60/2.0;
-//    btn4.layer.masksToBounds = 60/2.0;
-//    
-//    btn4.layer.borderColor = [UIColor whiteColor].CGColor;
-//    btn4.layer.borderWidth = 1.5;
-//    
-//
-//    [btn4 setTitle:@"技巧" forState:UIControlStateNormal];
-//    [btn4 setBackgroundImage:[UIImage imageNamed:@"功能"] forState:UIControlStateHighlighted];
-////    [btn4 setImage:[UIImage imageNamed:@"功能"]forState:UIControlStateHighlighted];
-//
-//    [btn4 setTintColor:[UIColor whiteColor]];
-//    
-//    [btn4 setTitleShadowColor:[UIColor grayColor] forState:UIControlStateNormal];
-//    [btn4 addTarget:self action:@selector(jiqiao:) forControlEvents:UIControlEventTouchDown];
-//    
-//    
-//    [self.view addSubview:btn4];
+    [views addSubview:view];
+
+   //1、饮食按钮。
+    UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(30, 230, 60, 60)];
+    //设置为圆
+    btn1.layer.cornerRadius = 60/2.0;
+    btn1.layer.masksToBounds = 60/2.0;
+    //设置边框颜色
+    btn1.layer.borderColor = [UIColor whiteColor].CGColor;
+    //边框宽度
+    btn1.layer.borderWidth = 1.5;
+    //字体颜色
+    [btn1 setTintColor:[UIColor whiteColor]];
+    //字体阴影颜色
+    [btn1 setTitleShadowColor:[UIColor grayColor] forState:UIControlStateNormal];
+    
+    [btn1 setTitle:@"饮食" forState:UIControlStateNormal];
+    [btn1 setBackgroundImage:[UIImage imageNamed:@"功能"] forState:UIControlStateHighlighted];
+//    [btn1 setImage:[UIImage imageNamed:@"功能"]forState:UIControlStateHighlighted];
+    //设置跳转
+    [btn1 addTarget:self action:@selector(yinshi:) forControlEvents:UIControlEventTouchDown];
+    
+    [views addSubview:btn1];
+    
+    //2、问答按钮
+    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(115, 230, 60, 60)];
+    
+    btn2.layer.cornerRadius = 60/2.0;
+    btn2.layer.masksToBounds = 60/2.0;
+    
+    btn2.layer.borderColor = [UIColor whiteColor].CGColor;
+    btn2.layer.borderWidth = 1.5;
+    
+    [btn2 setTitle:@"问答" forState:UIControlStateNormal];
+    [btn2 setBackgroundImage:[UIImage imageNamed:@"功能"] forState:UIControlStateHighlighted];
+//    [btn2 setImage:[UIImage imageNamed:@"功能"]forState:UIControlStateHighlighted];
+    [btn2 setTintColor:[UIColor whiteColor]];
+    [btn2 setTitleShadowColor:[UIColor grayColor] forState:UIControlStateNormal];
+    
+    [btn2 addTarget:self action:@selector(wenda:) forControlEvents:UIControlEventTouchDown];
+    
+    [views addSubview:btn2];
+    //3、励志按钮
+    UIButton *btn3 = [[UIButton alloc] initWithFrame:CGRectMake(200, 230, 60, 60)];
+    
+    btn3.layer.cornerRadius = 60/2.0;
+    btn3.layer.masksToBounds = 60/2.0;
+    
+    btn3.layer.borderColor = [UIColor whiteColor].CGColor;
+    btn3.layer.borderWidth = 1.5;
+    
+    [btn3 setTitle:@"励志" forState:UIControlStateNormal];
+    [btn3 setBackgroundImage:[UIImage imageNamed:@"功能"] forState:UIControlStateHighlighted];
+//    [btn3 setImage:[UIImage imageNamed:@"功能"]forState:UIControlStateHighlighted];
+    [btn3 setTintColor:[UIColor whiteColor]];
+    [btn3 setTitleShadowColor:[UIColor grayColor] forState:UIControlStateNormal];
+    
+    [btn3 addTarget:self action:@selector(lizhi:) forControlEvents:UIControlEventTouchDown];
+    
+    
+    [views addSubview:btn3];
+
+    //4、技巧按钮
+    UIButton *btn4 = [[UIButton alloc] initWithFrame:CGRectMake(285, 230, 60, 60)];
+    
+    btn4.layer.cornerRadius = 60/2.0;
+    btn4.layer.masksToBounds = 60/2.0;
+    
+    btn4.layer.borderColor = [UIColor whiteColor].CGColor;
+    btn4.layer.borderWidth = 1.5;
+    
+
+    [btn4 setTitle:@"技巧" forState:UIControlStateNormal];
+    [btn4 setBackgroundImage:[UIImage imageNamed:@"功能"] forState:UIControlStateHighlighted];
+//    [btn4 setImage:[UIImage imageNamed:@"功能"]forState:UIControlStateHighlighted];
+
+    [btn4 setTintColor:[UIColor whiteColor]];
+    
+    [btn4 setTitleShadowColor:[UIColor grayColor] forState:UIControlStateNormal];
+    [btn4 addTarget:self action:@selector(jiqiao:) forControlEvents:UIControlEventTouchDown];
+    
+    
+    [views addSubview:btn4];
 
     
     
@@ -168,17 +185,7 @@
     UIBarButtonItem *btn = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
     
     self.navigationItem.leftBarButtonItem = btn;
-    
-    
-#pragma mark  ==========创建TableVi============
-    _myTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 375, 667) style:UITableViewStylePlain];
-    _myTable.delegate = self;
-    _myTable.dataSource = self;
-    
-    _myTable.rowHeight = 80;
-    _myTable.tableHeaderView = scrollerview;
 
-    [self.view addSubview:_myTable];
     
 
     // Do any additional setup after loading the view from its nib.

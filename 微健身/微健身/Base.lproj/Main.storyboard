@@ -213,11 +213,10 @@
             </objects>
             <point key="canvasLocation" x="2060.5" y="2310.5"/>
         </scene>
-        <!--菜单-->
+        <!--Navigation Controller-->
         <scene sceneID="axA-MG-fYe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Rz-P4-kOt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="菜单" image="菜单.png" id="D6c-B2-tFN"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2SD-BG-AxC">
@@ -226,11 +225,6 @@
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="eJp-4J-Fiq">
-                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </toolbar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="bk4-tx-oUZ"/>
                     </connections>
@@ -254,7 +248,6 @@
         <image name="咨询.png" width="266" height="268"/>
         <image name="肌肉图.png" width="361" height="507"/>
         <image name="背景1.png" width="484" height="784"/>
-        <image name="菜单.png" width="16" height="16"/>
         <image name="计划.png" width="264" height="270"/>
         <image name="记录.png" width="263" height="265"/>
         <image name="设置.png" width="16" height="16"/>

@@ -12,7 +12,7 @@
 #import "jihuaViewController.h"
 #import "jiluViewController.h"
 #import "zixunViewController.h"
-
+#import "zijihuaViewController.h"
 
 @interface ViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *ImageView;
@@ -53,10 +53,13 @@
     }
     return _datas;
 }
+
+
+//传递数据
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     CartoonViewController *vc = segue.destinationViewController;
     vc.arr= [NSArray arrayWithArray:self.datas];
-    
+
 }
 #pragma mark   ---------跳转至计划---------
 // 计划。
@@ -109,7 +112,7 @@
 -(void)addScrollView{
     
     //循环的图片数量
-     int count = 3;
+     int count = 2;
     
     _myScroller= [[UIScrollView alloc] initWithFrame:CGRectMake(0, 63, 375, 160)];
     [self.view addSubview:_myScroller];
@@ -120,9 +123,10 @@
     self.myScroller.pagingEnabled = YES;
     //设置代理
     _myScroller.delegate = self;
+    
     // 设置pagecontrol-------------******
     self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(167, 200, 40, 25)];
-   
+    
     [self.view addSubview:self.pageControl];
     self.pageControl.numberOfPages = count;
     
@@ -148,7 +152,7 @@
 - (void)addTimer
 {
 //设置定时器，让其两秒执行一次方法并循环
-    _timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
 }
 
 - (void)nextImage
