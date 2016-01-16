@@ -89,7 +89,7 @@
 {
     
     zijihuaViewController *vc = [[zijihuaViewController alloc]init];
-    
+    vc.inter = indexPath.row;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

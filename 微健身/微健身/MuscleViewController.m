@@ -9,10 +9,22 @@
 #import "MuscleViewController.h"
 #import "ViewController.h"
 #import "DataModels.h"
+#import <AVFoundation/AVFoundation.h>
+#import "Masonry.h"
+
+#define  PLAYURL @"http://7xpypo.com2.z0.glb.qiniucdn.com/job_%E5%B8%83%E5%B0%94%E6%95%99%E8%82%B2_%E7%87%95%E5%8D%81%E5%85%AB_MySQL%E8%BD%BB%E5%BF%AB%E5%85%A5%E9%97%A8.001.%E8%AE%A4%E8%AF%86%E5%B9%B6%E5%AE%89%E8%A3%85MySQL.wmv"
+
+#define  PLAYUR @"file:///Users/qingyun/Desktop/1_1.mp4"
+
 
 @interface MuscleViewController ()<UIScrollViewDelegate>
 
-@property (nonatomic ,strong) UIPageControl *page;
+@property (nonatomic ,strong) UIView *uiView;
+@property (nonatomic ,strong) AVPlayerLayer *playerLayer;
+@property (nonatomic ,strong) UILabel *lab1;
+@property (nonatomic ,strong) UILabel *lab2;
+
+
 @end
 
 @implementation MuscleViewController
@@ -33,76 +45,109 @@
    ////设置标题栏
     self.title = model.title;
    
-   
-#pragma mark  ========创建scrollView==========
-   //创建scrollView
-   UIScrollView *scrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(50, 30, 275, 400)];
-   [self.view addSubview:scrollview];
-   
-   //设置contenSize
-   scrollview.contentSize = CGSizeMake(scrollview.frame.size.width *10 , 400);
-   //分页
-   scrollview.pagingEnabled = YES;
-   //设置代理
-   scrollview.delegate = self;
-   //设置背景
-   scrollview.backgroundColor = [UIColor blackColor];
-   
-   for (int i = 0;i < 10;i++) {
-      UIScrollView *scroll = [[UIScrollView alloc]initWithFrame:CGRectMake(275 * i, 0, 272, 397)];
-      [scrollview addSubview:scroll];
-      UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(3, 3, 272, 397)];
-      [scroll addSubview:imageView];
-   //设置scrollView的图片
-      NSString *imageName = [NSString stringWithFormat:@"%ld_%d",_flag-100,i + 1];
-      imageView.image = [UIImage imageNamed:imageName];
-      
-      //取消滚动条
-      scrollview.showsHorizontalScrollIndicator = NO;
 
-      _page = [[UIPageControl alloc] initWithFrame:CGRectMake(185, 400, 0, 25)];
-      
-      _page.numberOfPages = 10;
-      _page.currentPageIndicatorTintColor = [UIColor grayColor];
-      _page.pageIndicatorTintColor = [UIColor groupTableViewBackgroundColor];
-      [self.view addSubview:_page];
-      
-
-   }
 #pragma mark ========文本框==========
     //创建一个文本框，用来陈述图片的锻炼方法。
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(40, 440, 300, 120)];
-    label.backgroundColor = [UIColor grayColor];
+    _lab1 = [[UILabel alloc]initWithFrame:CGRectMake(25, 250, 325, 120)];
 
-   label.text = model.string;
-    label.font = [UIFont fontWithName:@"Arial" size:18];
+   _lab1.text = model.string;
      //文本居中
-    //label.textAlignment = YES;
+    _lab1.textAlignment = YES;
     //文本自适应大小
-    label.adjustsFontSizeToFitWidth = YES;
+    _lab1.adjustsFontSizeToFitWidth = YES;
      //文本最多行数。
-    label.numberOfLines = 10;
+    _lab1.numberOfLines = 10;
    
-    label.textColor = [UIColor orangeColor];
+    _lab1.textColor = [UIColor brownColor];
     //设置文本框为透明。
-    label.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:label];
+    _lab1.backgroundColor = [UIColor clearColor];
 
+    [self.view addSubview:_lab1];
+   
+   //Label 2
+   _lab2 = [[UILabel alloc]initWithFrame:CGRectMake(25, 400, 325, 120)];
+   
+   _lab2.text = model.method;
+   
+   _lab2.textAlignment = YES;
+   
+   _lab2.adjustsFontSizeToFitWidth = YES;
+   
+   _lab2.numberOfLines = 10;
+   
+   _lab2.textColor = [UIColor brownColor];
+   
+   _lab2.backgroundColor = [UIColor clearColor];
+   
+   [self.view addSubview:_lab2];
+   
 
-    // Do any additional setup after loading the view.
+   
+   
+   
+   
+//
+   _uiView = [UIView new];
+   [self.view addSubview:_uiView];
+   
+   
+   NSString *path = [[NSBundle mainBundle]pathForResource:model.mp4 ofType:@"mp4"];
+
+   NSURL *url = [NSURL fileURLWithPath:path];
+   AVPlayerItem *item = [AVPlayerItem playerItemWithURL:url];
+
+   AVPlayer *player = [[AVPlayer alloc]initWithPlayerItem:item];
+   
+   //生成layer
+   _playerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
+   
+   _playerLayer.frame = CGRectMake(0, 0,self.view.frame.size.width, 213);
+   
+   //设置屏幕填充
+   _playerLayer.videoGravity=AVLayerVideoGravityResizeAspect;
+   
+   [self.uiView.layer addSublayer:_playerLayer];
+   
+   [player play];
+
+   
+   
+ }
+
+- (void)updateViewConstraints{
+   
+  [_uiView mas_makeConstraints:^(MASConstraintMaker *make) {
+     make.top.equalTo(self.view);
+     make.left.equalTo(self.view);
+     make.right.equalTo(self.view);
+//     make.height.equalTo(@200);
+  }];
+   
+   
+   [_lab1 mas_makeConstraints:^(MASConstraintMaker *make) {
+      
+      make.top.equalTo(_uiView.mas_bottom);
+      make.left.equalTo(self.view).with.offset(25);
+      make.right.equalTo(self.view).with.offset(25);
+
+      make.height.equalTo(_uiView);
+   }];
+   
+   [_lab2 mas_makeConstraints:^(MASConstraintMaker *make) {
+      make.top.equalTo(_lab1.mas_bottom);
+      make.left.equalTo(self.view).with.offset(25);
+      make.right.equalTo(self.view).with.offset(25);
+      make.centerY.equalTo(@[_uiView,_lab1,_lab2]);
+      make.height.equalTo(@[_uiView,_lab2,_lab1]);
+   }];
+   
+   [super updateViewConstraints];
+   
 }
 
 
 
 
-
-// 让pagecontroller跟随scroller移动
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-   int page1 = (scrollView.contentOffset.x + scrollView.frame.size.width / 2) / scrollView.frame.size.width;
-   self.page.currentPage = page1;
-}
 //给按钮添加一个返回的方法
 - (void)click:(UIButton *)sender{
     [self dismissViewControllerAnimated:YES completion:^{

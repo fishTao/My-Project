@@ -10,5 +10,5 @@
 
 @interface zijihuaViewController : UIViewController
 
-
+@property(nonatomic ) NSInteger inter;
 @end

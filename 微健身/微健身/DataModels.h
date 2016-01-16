@@ -14,6 +14,10 @@
 @property (nonatomic ,strong)NSString *image;
 @property (nonatomic ,strong) NSString *string;
 @property (nonatomic ,strong) NSString *title;
+@property (nonatomic ,strong) NSString *tool;
+@property (nonatomic ,strong) NSString *method;
+@property (nonatomic ,strong) NSString *mp4;
+
 
 -(instancetype)initWithDictionary:(NSDictionary *)dict;
 +(instancetype)datasWithDictionary:(NSDictionary *)dict;

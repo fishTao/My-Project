@@ -9,6 +9,12 @@
 		<string>肱三头肌是运行在你的上臂后侧，从你的肩膀到手肘的肌肉。你的三头肌有三个“头”，或小部分组成的整个肌肉群; 它们构成了几乎三分之二的上臂。</string>
 		<key>image</key>
 		<string>肌肉_1.jpg</string>
+		<key>tool</key>
+		<string>  杠铃、哑铃、俯卧撑</string>
+		<key>method</key>
+		<string>肱二头肌属于臂肌，由外侧头和内侧头两部分组成，它负责肘关节的弯曲运动。锻炼肱二头肌时，您需要的基本训练就是杠铃训练，杠铃臂弯举是锻炼肱二头肌的训练方法。其次杠铃弯举以及俯卧撑也有效果。</string>
+		<key>mp4</key>
+		<string>1_1</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -17,6 +23,12 @@
 		<string>肱二头肌位于上臂前侧，整肌呈梭形.肱二头肌有长，短二头。故名‘肱二头肌&apos;长头起于肩胛骨盂上粗隆，短头起于肩胛骨喙突长</string>
 		<key>image</key>
 		<string>肌肉_2.jpg</string>
+		<key>tool</key>
+		<string>  单杠、哑铃、俯卧撑</string>
+		<key>method</key>
+		<string>肱三头肌是手臂肌肉，有三个部分组成肱肌、外侧头肌和内侧头肌。俯立臂屈伸，主要强化肱三头肌的孤立训练动作，动作：双膝微曲站立，自然俯身，手持哑铃，上臂紧靠体侧，曲肘90度。吸气，伸直手臂，动作完成呼气。</string>
+		<key>mp4</key>
+		<string>1_2</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -25,6 +37,12 @@
 		<string>背肌分为背浅肌、背深肌和背部筋膜。背浅肌分为两层，均起自脊柱的不同部位，止于上肢带骨或自由上肢骨。背深肌在脊柱两侧排列，分为长肌和短肌。</string>
 		<key>image</key>
 		<string>肌肉_3.jpg</string>
+		<key>tool</key>
+		<string>  单杠、八字架、史密斯机、仰卧起坐、引体向上</string>
+		<key>method</key>
+		<string>锻炼背部应该使用不同的器械从上到下从不同的角度去锻炼它，如，直腿硬拉：俯立双脚打开与肩同宽，双腿挺直、腹部收紧、背部挺直、头部抬起，双手紧握哑铃，掌心朝向身体，双臂微微弯曲放于身体下方</string>
+		<key>mp4</key>
+		<string>1_3</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -33,6 +51,12 @@
 		<string>小腿肌群最主要是小腿三头肌。    位于小腿后面浅层，特别发达，使小腿后部隆起，它由腓肠肌和比目鱼肌组成。比目鱼肌位于腓肠肌的深层。</string>
 		<key>image</key>
 		<string>肌肉_3.jpg</string>
+		<key>tool</key>
+		<string>  跑步、提踵、跳绳、蛙跳</string>
+		<key>method</key>
+		<string>提踵  ：提踵动作说白了就是抬起后脚跟， 它是发达小腿腓肠肌和比目鱼肌的主要手段。 其方法有站 立、坐姿、和骑人三种。提踵动作主要是以腓肠肌的收缩来完成的。提起脚跟时，应感到小腿肌群充分收缩，稍停顿 后再缓慢下落至最低限度，使小腿肌得到充分伸展。</string>
+		<key>mp4</key>
+		<string>1_4</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -41,6 +65,12 @@
 		<string>肩部主要由三头肌组成，呈三角形。起自锁骨的外侧段、肩峰和肩胛冈，肌束逐渐向外下方集中，止于肱骨三角肌粗隆。肱骨上端由于三角肌的覆盖，使肩关节呈圆隆形。</string>
 		<key>image</key>
 		<string>肌肉_5.jpg</string>
+		<key>tool</key>
+		<string>  哑铃、杠铃、俯卧撑、单杠</string>
+		<key>method</key>
+		<string>前平举，侧平举  ：前平举主要练三角肌前束和斜方肌。自然站立，双手持哑铃或杠铃，双臂贴身，向前平举，停留片刻，然后复原。侧平举主要练三角肌前中束。双手持哑铃，双臂贴身，两臂同时或轮换向体侧平举，手位过肩时停留片刻，然后复原。</string>
+		<key>mp4</key>
+		<string>1_5</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -49,6 +79,12 @@
 		<string>由左右两部分构成，又称胸大肌。  近固定，收缩时，可使肩关节内收、旋内和屈。远固定，拉躯干向手臂靠拢。胸肌还可分为胸上肢肌和胸固有肌。</string>
 		<key>image</key>
 		<string>肌肉_6.jpg</string>
+		<key>tool</key>
+		<string>  俯卧撑、哑铃飞鸟、单杠引体向上、扩胸运动。</string>
+		<key>method</key>
+		<string>俯卧撑，是最简单、普遍、实用的方法。数量：每组做10到15个，做3到8组，每组间休息1分钟。五个难度不同的俯卧撑：上斜俯卧撑、标准俯卧撑、侧重俯卧撑、杠杆俯卧撑、单手俯卧撑。更难的俯卧撑：侧重俯卧撑、杠杆俯卧撑等。</string>
+		<key>mp4</key>
+		<string>1_6</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -57,6 +93,12 @@
 		<string>前臂肌位于尺、桡骨的周围，多为长棱形肌，可分为前、后两群。 前群为屈肌群；后群为伸肌群。</string>
 		<key>image</key>
 		<string>肌肉_7.jpg</string>
+		<key>tool</key>
+		<string>  杠铃、哑铃</string>
+		<key>method</key>
+		<string> 两手反握杠铃，蹲坐下来。将前臂贴放在大腿上，把手腕向前伸出，垂于膝盖前，两手也可正握杠。反握主练前臂内侧肌肉。正握主练前臂外侧肌肉。动作过程  ：前臂平贴大腿，只把手腕尽力向上、向内屈转，直到不能再屈转时，静止一秒钟。放松前臂肌肉，让手腕向前回落。</string>
+		<key>mp4</key>
+		<string>1_7</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -65,6 +107,12 @@
 		<string>包括腹直肌、腹外斜肌，腹内斜肌和腹横肌。  当它们收缩时，可以使躯干弯曲及旋转，并可以防止骨盆前倾。</string>
 		<key>image</key>
 		<string>肌肉_8.jpg</string>
+		<key>tool</key>
+		<string>  仰卧卷腹、腹部撕裂者。</string>
+		<key>method</key>
+		<string>初步减腹、打造腹肌、雕刻腹肌。 侧卷腹、仰卧抬腿卷腹、空中蹬车、仰卧举腿、垂直举腿、仰卧直腿两头起、扭转卷腹、负重体旋转、负重体侧屈、双杠抬腿、悬空抬腿。</string>
+		<key>mp4</key>
+		<string>1_8</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -73,6 +121,12 @@
 		<string>大腿肌位于股骨周围，可分为前群、后群和内侧群。 大腿肌肉是人体力量最强、体积最大的肌群之一，不但对一个人的全身力量至关重要。大腿肌肉包括前面的股四头肌、后面的股二头肌。两侧的内收与外展肌。</string>
 		<key>image</key>
 		<string>肌肉_9.jpg</string>
+		<key>tool</key>
+		<string>  宽窄站距下蹲、斜蹲、负重深蹲</string>
+		<key>method</key>
+		<string>大腿分为前外侧、后侧和内侧三个肌群。坐姿水平蹬腿、斜卧负重腿举、坐姿腿屈伸、仰卧腿弯举。杠铃深蹲 :就是传统深蹲动作,相比颈前杠铃深蹲,颈后深蹲承受重量大、更安全;既能发达股四头肌,也能发达臀肌。</string>
+		<key>mp4</key>
+		<string>1_9</string>
 	</dict>
 </array>
 </plist>

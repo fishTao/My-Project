@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "Masonry.h"
+
+
 #import "DataModels.h"
 #import "CartoonViewController.h"
 #import "jihuaViewController.h"
@@ -14,9 +17,11 @@
 #import "zixunViewController.h"
 #import "zijihuaViewController.h"
 
+
 @interface ViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *ImageView;
-
+@property (nonatomic ,strong) UIView *uiView;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (nonatomic ,strong) UIScrollView *myScroller;
 @property (nonatomic ,strong) UIPageControl *pageControl;
 @property (nonatomic ,strong) NSTimer *timer;
@@ -30,10 +35,19 @@
    
     //执行图片轮播定时器
     [self addTimer];
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+   _backgroundImage.image = [UIImage imageNamed:@"背景1"];
+    [self.view sendSubviewToBack:_backgroundImage];
+//    [self.view addSubview:_backgroundImage];
+    
+    _uiView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, 375, 160)];
+    _uiView.backgroundColor = [UIColor redColor];
+    
+    [self.view addSubview:_uiView];
     
     [self addScrollView];
-    
+    [self updateViewConstraints];
+
 
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -115,10 +129,10 @@
      int count = 2;
     
     _myScroller= [[UIScrollView alloc] initWithFrame:CGRectMake(0, 63, 375, 160)];
-    [self.view addSubview:_myScroller];
+    [_uiView addSubview:_myScroller];
     
     //设置contentsize
-    _myScroller.contentSize = CGSizeMake(_myScroller.frame.size.width * count, 160);
+    _myScroller.contentSize = CGSizeMake(self.view.frame.size.width * count, 160);
     //分页
     self.myScroller.pagingEnabled = YES;
     //设置代理
@@ -127,7 +141,7 @@
     // 设置pagecontrol-------------******
     self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(167, 200, 40, 25)];
     
-    [self.view addSubview:self.pageControl];
+    [_uiView addSubview:self.pageControl];
     self.pageControl.numberOfPages = count;
     
     //设置背景
@@ -148,6 +162,48 @@
         
     }
 }
+
+//scroller的自动布局
+-(void)updateViewConstraints{
+    
+    [_backgroundImage mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.view);
+        make.left.equalTo(self.view);
+        make.right.equalTo(self.view);
+        make.top.equalTo(self.view).with.offset(226);
+     
+    }];
+    
+    [_uiView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).with.offset(64);
+        make.left.equalTo(self.view);
+        make.right.equalTo(self.view);
+        
+        make.bottom.equalTo(_backgroundImage.mas_top);
+
+    }];
+
+    [_myScroller mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.equalTo(_uiView);
+        make.left.equalTo(_uiView);
+        make.width.equalTo(_uiView);
+        make.height.equalTo(_uiView);
+    
+    }];
+    [_pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).with.offset(195);
+        make.bottom.equalTo(_backgroundImage.mas_top);
+        make.centerX.equalTo(_backgroundImage);
+    }];
+    
+    
+    
+    [super updateViewConstraints];
+}
+
+
+
 
 - (void)addTimer
 {
