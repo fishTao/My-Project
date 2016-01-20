@@ -8,15 +8,13 @@
 
 #import "ViewController.h"
 #import "Masonry.h"
-
-
 #import "DataModels.h"
 #import "CartoonViewController.h"
 #import "jihuaViewController.h"
 #import "jiluViewController.h"
 #import "zixunViewController.h"
 #import "zijihuaViewController.h"
-
+#import "Header.h"
 
 @interface ViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *ImageView;
@@ -40,7 +38,7 @@
     [self.view sendSubviewToBack:_backgroundImage];
 //    [self.view addSubview:_backgroundImage];
     
-    _uiView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, 375, 160)];
+    _uiView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, Kwidth, 160)];
     _uiView.backgroundColor = [UIColor redColor];
     
     [self.view addSubview:_uiView];
@@ -128,11 +126,11 @@
     //循环的图片数量
      int count = 2;
     
-    _myScroller= [[UIScrollView alloc] initWithFrame:CGRectMake(0, 63, 375, 160)];
+    _myScroller= [[UIScrollView alloc] initWithFrame:CGRectMake(0, 63, Kwidth, 160)];
     [_uiView addSubview:_myScroller];
     
     //设置contentsize
-    _myScroller.contentSize = CGSizeMake(self.view.frame.size.width * count, 160);
+    _myScroller.contentSize = CGSizeMake(Kwidth * count, 160);
     //分页
     self.myScroller.pagingEnabled = YES;
     //设置代理
@@ -144,17 +142,15 @@
     [_uiView addSubview:self.pageControl];
     self.pageControl.numberOfPages = count;
     
-    //设置背景
+//    //设置背景
     _myScroller.backgroundColor = [UIColor blackColor];
     
     
     
     for (int i = 0;i < count; i++ ) {
-        UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(375 * i,0, 370, 160 )];
-        [_myScroller addSubview:scroll];
-        
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 370, 150)];
-        [scroll addSubview:imageView];
+
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((Kwidth * i)+5, 5, Kwidth-10, 162)];
+        [_myScroller addSubview:imageView];
         
     //设置scroll的图片
         NSString *imageName = [NSString stringWithFormat:@"11_%d.jpg",i + 1];
@@ -170,7 +166,7 @@
         make.bottom.equalTo(self.view);
         make.left.equalTo(self.view);
         make.right.equalTo(self.view);
-        make.top.equalTo(self.view).with.offset(226);
+//        make.top.equalTo(self.view).with.offset(224);
      
     }];
     
@@ -186,13 +182,13 @@
     [_myScroller mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.equalTo(_uiView);
-        make.left.equalTo(_uiView);
-        make.width.equalTo(_uiView);
+        make.left.equalTo(_uiView.mas_left);
+        make.width.equalTo(_uiView.mas_width);
         make.height.equalTo(_uiView);
     
     }];
     [_pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view).with.offset(195);
+//        make.top.equalTo(self.view).with.offset(195);
         make.bottom.equalTo(_backgroundImage.mas_top);
         make.centerX.equalTo(_backgroundImage);
     }];

@@ -21,4 +21,9 @@
 
 -(instancetype)initWithDictionary:(NSDictionary *)dict;
 +(instancetype)datasWithDictionary:(NSDictionary *)dict;
+
+
+
+
+
 @end

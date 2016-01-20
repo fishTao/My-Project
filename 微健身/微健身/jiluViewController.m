@@ -9,9 +9,13 @@
 #import "jiluViewController.h"
 #import "AddViewController.h"
 
+
+
 @interface jiluViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic ,strong) NSMutableArray *datas;
 @property (nonatomic ,strong) UITableView *myTable;
+
+
 
 @end
 
@@ -19,8 +23,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _datas = [NSMutableArray array];
+    [self saveload];
+
     
+    //读取plist文件 =====字典
+    NSString *dopath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    
+    NSString *filepath = [dopath stringByAppendingPathComponent:@"WJS.plist"];
+
+    NSMutableArray *arr = [NSMutableArray arrayWithContentsOfFile:filepath];
+
+    _datas = arr;
+
+
     //设置背景色
     self.view.backgroundColor = [UIColor whiteColor];
     //添加左右按钮
@@ -44,9 +59,22 @@
     
     [self.view addSubview:_myTable];
     
- 
+
     // Do any additional setup after loading the view.
 }
+-(void)saveload{
+    //读取plist文件 =====字典
+    NSString *dopath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    
+    NSString *filepath = [dopath stringByAppendingPathComponent:@"WJS.plist"];
+    
+    NSMutableArray *arr = [NSMutableArray arrayWithContentsOfFile:filepath];
+    
+    _datas = arr;
+
+
+}
+
 
 #pragma mark      ----------tableView DataSource-------
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -80,12 +108,12 @@
     cell.textLabel.numberOfLines = 0;
     //文字自适应大小
     cell.textLabel.adjustsFontSizeToFitWidth = YES;
+    
+
     cell.textLabel.text = _datas[indexPath.row];
-  
+    
     return cell;
 }
-
-
 
 
 
@@ -111,9 +139,9 @@
     
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:View];
     View.addLabelValue = ^(NSString *string){
-        
-        
+       
         [_datas addObject:string];
+        [self saveload];
         [self.myTable reloadData];
     };
 
@@ -122,6 +150,13 @@
     }];
     
 }
+
+
+
+
+
+
+
 
 #pragma mark - Navigation
 

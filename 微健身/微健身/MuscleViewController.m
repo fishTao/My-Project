@@ -12,9 +12,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "Masonry.h"
 
-#define  PLAYURL @"http://7xpypo.com2.z0.glb.qiniucdn.com/job_%E5%B8%83%E5%B0%94%E6%95%99%E8%82%B2_%E7%87%95%E5%8D%81%E5%85%AB_MySQL%E8%BD%BB%E5%BF%AB%E5%85%A5%E9%97%A8.001.%E8%AE%A4%E8%AF%86%E5%B9%B6%E5%AE%89%E8%A3%85MySQL.wmv"
 
-#define  PLAYUR @"file:///Users/qingyun/Desktop/1_1.mp4"
 
 
 @interface MuscleViewController ()<UIScrollViewDelegate>
@@ -74,7 +72,8 @@
    _lab2.adjustsFontSizeToFitWidth = YES;
    
    _lab2.numberOfLines = 10;
-   
+
+
    _lab2.textColor = [UIColor brownColor];
    
    _lab2.backgroundColor = [UIColor clearColor];
@@ -87,7 +86,7 @@
    
    
 //
-   _uiView = [UIView new];
+   _uiView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 211)];
    [self.view addSubview:_uiView];
    
    
@@ -101,8 +100,8 @@
    //生成layer
    _playerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
    
-   _playerLayer.frame = CGRectMake(0, 0,self.view.frame.size.width, 213);
-   
+   _playerLayer.frame = CGRectMake(0, 0,self.uiView.frame.size.width, _uiView.frame.size.height);
+
    //设置屏幕填充
    _playerLayer.videoGravity=AVLayerVideoGravityResizeAspect;
    
@@ -117,28 +116,31 @@
 - (void)updateViewConstraints{
    
   [_uiView mas_makeConstraints:^(MASConstraintMaker *make) {
+
      make.top.equalTo(self.view);
-     make.left.equalTo(self.view);
-     make.right.equalTo(self.view);
-//     make.height.equalTo(@200);
+     make.centerX.equalTo(self.view);
+     make.width.equalTo(self.view);
+     make.height.equalTo(@211);
+     
   }];
    
    
    [_lab1 mas_makeConstraints:^(MASConstraintMaker *make) {
       
-      make.top.equalTo(_uiView.mas_bottom);
-      make.left.equalTo(self.view).with.offset(25);
-      make.right.equalTo(self.view).with.offset(25);
-
-      make.height.equalTo(_uiView);
+      make.top.equalTo(_uiView.mas_bottom).with.offset(10);
+      make.left.equalTo(self.view).with.offset(35);
+      make.right.equalTo(self.view).with.offset(-35);
+      make.bottom.equalTo(_lab2.mas_top).with.offset(-20);
    }];
    
    [_lab2 mas_makeConstraints:^(MASConstraintMaker *make) {
-      make.top.equalTo(_lab1.mas_bottom);
-      make.left.equalTo(self.view).with.offset(25);
-      make.right.equalTo(self.view).with.offset(25);
-      make.centerY.equalTo(@[_uiView,_lab1,_lab2]);
-      make.height.equalTo(@[_uiView,_lab2,_lab1]);
+
+      make.bottom.equalTo(self.view).with.offset(-10);
+      make.left.equalTo(self.view).with.offset(35);
+      make.right.equalTo(self.view).with.offset(-35);
+      
+      make.height.equalTo(_lab1);
+
    }];
    
    [super updateViewConstraints];

@@ -17,8 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aFZ-JF-oLc">
+                                <rect key="frame" x="0.0" y="216" width="375" height="451"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="0.65500950168918914" colorSpace="calibratedRGB"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3e-29-g38">
-                                <rect key="frame" x="198" y="244" width="161" height="155"/>
+                                <rect key="frame" x="203" y="234" width="152" height="152"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="计划.png">
@@ -29,7 +34,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCB-xb-gNw">
-                                <rect key="frame" x="198" y="429" width="161" height="154"/>
+                                <rect key="frame" x="203" y="431" width="152" height="152"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="咨询.png">
@@ -40,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAw-HE-1uR">
-                                <rect key="frame" x="16" y="244" width="162" height="155"/>
+                                <rect key="frame" x="20" y="234" width="153" height="152"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="动画.png">
@@ -51,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-m6-f2i">
-                                <rect key="frame" x="16" y="429" width="162" height="154"/>
+                                <rect key="frame" x="20" y="431" width="153" height="152"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="记录.png">
@@ -61,31 +66,26 @@
                                     <action selector="jilu:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4R4-7c-UQk"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aFZ-JF-oLc">
-                                <rect key="frame" x="0.0" y="218" width="375" height="449"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="0.65500950168918914" colorSpace="calibratedRGB"/>
-                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="V6C-m6-f2i" firstAttribute="height" secondItem="KCB-xb-gNw" secondAttribute="height" id="2FI-xx-KBi"/>
-                            <constraint firstAttribute="trailing" secondItem="KCB-xb-gNw" secondAttribute="trailing" constant="16" id="4vc-lc-MTU"/>
+                            <constraint firstAttribute="trailing" secondItem="KCB-xb-gNw" secondAttribute="trailing" constant="20" id="4vc-lc-MTU"/>
                             <constraint firstItem="V6C-m6-f2i" firstAttribute="width" secondItem="uAw-HE-1uR" secondAttribute="width" id="6HG-7v-VWz"/>
-                            <constraint firstItem="uAw-HE-1uR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="200" id="6lW-wD-J7a"/>
-                            <constraint firstItem="KCB-xb-gNw" firstAttribute="leading" secondItem="V6C-m6-f2i" secondAttribute="trailing" constant="20" id="7ru-2p-Bcm"/>
+                            <constraint firstItem="uAw-HE-1uR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="190" id="6lW-wD-J7a"/>
+                            <constraint firstItem="KCB-xb-gNw" firstAttribute="leading" secondItem="V6C-m6-f2i" secondAttribute="trailing" constant="30" id="7ru-2p-Bcm"/>
                             <constraint firstItem="V6C-m6-f2i" firstAttribute="width" secondItem="KCB-xb-gNw" secondAttribute="width" id="9tM-lF-dTC"/>
                             <constraint firstItem="V6C-m6-f2i" firstAttribute="height" secondItem="uAw-HE-1uR" secondAttribute="height" id="AVU-qJ-v1q"/>
                             <constraint firstItem="V6C-m6-f2i" firstAttribute="centerY" secondItem="KCB-xb-gNw" secondAttribute="centerY" id="Cgv-ua-6nH"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="V6C-m6-f2i" secondAttribute="bottom" constant="40" id="Ck6-8J-KCS"/>
-                            <constraint firstItem="aFZ-JF-oLc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="174" id="H5C-r0-023"/>
+                            <constraint firstItem="aFZ-JF-oLc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="172" id="H5C-r0-023"/>
                             <constraint firstItem="O3e-29-g38" firstAttribute="centerY" secondItem="uAw-HE-1uR" secondAttribute="centerY" id="Lvi-dJ-nWp"/>
                             <constraint firstItem="aFZ-JF-oLc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="NJJ-cv-zOu"/>
                             <constraint firstItem="O3e-29-g38" firstAttribute="width" secondItem="uAw-HE-1uR" secondAttribute="width" id="OJ2-Ws-g6i"/>
-                            <constraint firstItem="V6C-m6-f2i" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="PYh-Wa-2Fv"/>
+                            <constraint firstItem="V6C-m6-f2i" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="PYh-Wa-2Fv"/>
                             <constraint firstItem="uAw-HE-1uR" firstAttribute="centerX" secondItem="V6C-m6-f2i" secondAttribute="centerX" id="TRW-rR-lNp"/>
-                            <constraint firstItem="V6C-m6-f2i" firstAttribute="top" secondItem="uAw-HE-1uR" secondAttribute="bottom" constant="30" id="WtI-pd-9BL"/>
+                            <constraint firstItem="V6C-m6-f2i" firstAttribute="top" secondItem="uAw-HE-1uR" secondAttribute="bottom" constant="45" id="WtI-pd-9BL"/>
                             <constraint firstAttribute="bottom" secondItem="aFZ-JF-oLc" secondAttribute="bottom" id="dza-sQ-1GB"/>
                             <constraint firstItem="O3e-29-g38" firstAttribute="centerX" secondItem="KCB-xb-gNw" secondAttribute="centerX" id="fL4-c7-LYs"/>
                             <constraint firstItem="O3e-29-g38" firstAttribute="height" secondItem="uAw-HE-1uR" secondAttribute="height" id="vMS-jy-xIq"/>
@@ -124,68 +124,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxf-01-sEu">
-                                <rect key="frame" x="303" y="544" width="66" height="62"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="肌肉图.png" translatesAutoresizingMaskIntoConstraints="NO" id="6fN-8u-W6V">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <animations/>
-                                <state key="normal" image="9.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goto9:" destination="zy2-dY-0uk" eventType="touchUpInside" id="Suv-fz-4uf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBM-9T-gcm">
-                                <rect key="frame" x="303" y="435" width="67" height="62"/>
-                                <animations/>
-                                <state key="normal" image="8.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goto8:" destination="zy2-dY-0uk" eventType="touchUpInside" id="op4-Gt-GcG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1B-8D-Dcp">
-                                <rect key="frame" x="303" y="69" width="67" height="58"/>
-                                <animations/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goto5:" destination="zy2-dY-0uk" eventType="touchUpInside" id="Ntm-3c-Tqv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZI-PZ-bsn">
-                                <rect key="frame" x="6" y="544" width="69" height="57"/>
-                                <animations/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goto4:" destination="zy2-dY-0uk" eventType="touchUpInside" id="MVF-Ds-7at"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkp-qk-oW4">
-                                <rect key="frame" x="5" y="390" width="70" height="61"/>
-                                <animations/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goto3:" destination="zy2-dY-0uk" eventType="touchUpInside" id="GBC-iS-au6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-3u-AH5">
-                                <rect key="frame" x="8" y="219" width="68" height="58"/>
-                                <animations/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goto2:" destination="zy2-dY-0uk" eventType="touchUpInside" id="ujp-a6-RgX"/>
-                                </connections>
-                            </button>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG9-dN-t6U">
-                                <rect key="frame" x="7" y="66" width="68" height="63"/>
+                                <rect key="frame" x="7" y="62" width="68" height="56"/>
                                 <animations/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,8 +138,48 @@
                                     <action selector="goto1:" destination="zy2-dY-0uk" eventType="touchUpInside" id="hqL-pe-Ewm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-3u-AH5">
+                                <rect key="frame" x="7" y="202" width="68" height="53"/>
+                                <animations/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goto2:" destination="zy2-dY-0uk" eventType="touchUpInside" id="ujp-a6-RgX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkp-qk-oW4">
+                                <rect key="frame" x="7" y="355" width="68" height="58"/>
+                                <animations/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goto3:" destination="zy2-dY-0uk" eventType="touchUpInside" id="GBC-iS-au6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZI-PZ-bsn">
+                                <rect key="frame" x="6" y="494" width="69" height="57"/>
+                                <animations/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goto4:" destination="zy2-dY-0uk" eventType="touchUpInside" id="MVF-Ds-7at"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1B-8D-Dcp">
+                                <rect key="frame" x="303" y="61" width="67" height="58"/>
+                                <animations/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goto5:" destination="zy2-dY-0uk" eventType="touchUpInside" id="Ntm-3c-Tqv"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ns6-qv-4gm">
-                                <rect key="frame" x="305" y="219" width="66" height="63"/>
+                                <rect key="frame" x="304" y="197" width="66" height="58"/>
                                 <animations/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -205,7 +189,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vr3-0K-PeD">
-                                <rect key="frame" x="302" y="311" width="67" height="59"/>
+                                <rect key="frame" x="303" y="283" width="67" height="59"/>
                                 <animations/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -214,13 +198,35 @@
                                     <action selector="goto7:" destination="zy2-dY-0uk" eventType="touchUpInside" id="e5L-OJ-hFI"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="肌肉图.png" translatesAutoresizingMaskIntoConstraints="NO" id="6fN-8u-W6V">
-                                <rect key="frame" x="0.0" y="44" width="375" height="690"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxf-01-sEu">
+                                <rect key="frame" x="303" y="544" width="66" height="62"/>
                                 <animations/>
-                            </imageView>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goto9:" destination="zy2-dY-0uk" eventType="touchUpInside" id="Suv-fz-4uf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBM-9T-gcm">
+                                <rect key="frame" x="303" y="392" width="67" height="62"/>
+                                <animations/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goto8:" destination="zy2-dY-0uk" eventType="touchUpInside" id="op4-Gt-GcG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6fN-8u-W6V" secondAttribute="bottom" id="aPz-Z4-NWH"/>
+                            <constraint firstAttribute="trailing" secondItem="6fN-8u-W6V" secondAttribute="trailing" id="hXd-31-ulG"/>
+                            <constraint firstItem="6fN-8u-W6V" firstAttribute="top" secondItem="iKG-Am-HwF" secondAttribute="bottom" id="huQ-Zd-I94"/>
+                            <constraint firstItem="6fN-8u-W6V" firstAttribute="leading" secondItem="xqz-PQ-wfw" secondAttribute="leading" id="zhO-kG-Nw4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="请选择需要锻炼的部位" id="AjN-14-YLf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -251,8 +257,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="8.png" width="109" height="82"/>
-        <image name="9.png" width="110" height="80"/>
         <image name="动画.png" width="256" height="261"/>
         <image name="咨询.png" width="266" height="268"/>
         <image name="肌肉图.png" width="361" height="507"/>

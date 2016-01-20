@@ -9,10 +9,13 @@
 #import "jihuaViewController.h"
 
 #import "zijihuaViewController.h"
+#import "Masonry.h"
+
 
 @interface jihuaViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic ,strong) UITableView *myTable;
 @property (nonatomic ,strong) NSArray *array;
+@property (nonatomic ,strong) NSArray *images;
 
 @end
 
@@ -24,8 +27,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _array = @[@"  肱二头肌",@"  肱三头肌",@"  背部",@"  小腿",@"  肩部",@"  胸肌",@"  前臂",@"  腹肌",@"  大腿"];
-    
+    _array = @[@"肱二头肌",@"肱三头肌",@"背部",@"小腿",@"肩部",@"胸肌",@"前臂",@"腹肌",@"大腿"];
+    _images =@[@"肱 三头肌",@"肱 二头肌",@"背 部",@"小 腿",@"肩 部",@"胸 肌",@"前 臂",@"腹 肌",@"大 腿"];
+
+
     
     //设置背景色
     self.view.backgroundColor = [UIColor whiteColor];
@@ -40,14 +45,17 @@
     _myTable.delegate = self;
     _myTable.dataSource = self;
     _myTable.rowHeight = 67;
-
+    
+    //让分割线从0开始显示
+    _myTable.separatorInset=UIEdgeInsetsMake(0, 0, 0,0);
     
     [self.view addSubview:_myTable];
 
-    UIImageView *img = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    img.image = [UIImage imageNamed:@"背景1"];
-    img.alpha = 0.7;
-    _myTable.backgroundView = img;
+//    UIImageView *img = [[UIImageView alloc] initWithFrame:self.view.bounds];
+//    img.image = [UIImage imageNamed:@"背景1"];
+//    img.alpha = 0.7;
+//    _myTable.backgroundView = img;
+    
     // Do any additional setup after loading the view.
 }
 
@@ -64,25 +72,32 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:idenfile];
 
         cell.textLabel.text = _array[indexPath.row];
-        
+        cell.imageView.image = [UIImage imageNamed:_images[indexPath.row]];
+
     }
     return cell;
     
 }
 
-// ====添加删除表格
--(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return YES;
-}
--(NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
 
-    UITableViewRowAction *rowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"加入计划" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
 
+-(void)updateViewConstraints{
+
+    [_myTable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top);
+        make.left.equalTo(self.view.mas_left);
+        make.right.equalTo(self.view.mas_right);
+        make.bottom.equalTo(self.view.mas_bottom);
     }];
+    
+    
+    [super updateViewConstraints];
 
-    return @[rowAction];
 }
+
+
+
+
 
 //跳转至播放页面
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

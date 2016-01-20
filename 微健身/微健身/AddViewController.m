@@ -7,10 +7,16 @@
 //
 
 #import "AddViewController.h"
+#define fileName @"WJS.plist"
+#import "jiluViewController.h"
+
 
 @interface AddViewController ()
 
 @property (nonatomic ,strong)UITextView *textView;
+
+@property(nonatomic,strong) NSString *filePath;
+@property (nonatomic ,strong)NSMutableArray *data;
 
 @end
 
@@ -18,6 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+
     //设置背景色
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -50,11 +58,11 @@
    _textView
     = [[UITextView alloc] initWithFrame:CGRectMake(45, 193, 285, 160)];
     _textView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    //设置字体大小
+
     _textView.font = [UIFont systemFontOfSize:18];
-    //设置字体颜色
+
     _textView.textColor = [UIColor blackColor];
-    //设置textView透明度
+
     _textView.alpha = 0.7;
     //设置圆角，边框属性
     self.textView.layer.cornerRadius = 8.0f;
@@ -64,11 +72,32 @@
     [self.view addSubview:_textView
      ];
     [_textView setText:@"日期 :\n事件 :"];
- 
 
-    
+//    _data = [NSString stringWithString:_textView.text];
     // Do any additional setup after loading the view.
 }
+
+
+// 将数据保存至plist文件
+-(void)save{
+
+    NSString *docPath =  NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    
+    NSString *filePath = [docPath stringByAppendingPathComponent:@"WJS.plist"];
+    NSLog(@"%@",filePath);
+    
+    NSArray *array = @[_textView.text];
+     [array writeToFile:filePath atomically:YES];
+
+}
+
+
+
+
+
+
+
+
 //返回
 -(void)clickBack:(UIBarButtonItem *)sender{
     
@@ -80,12 +109,11 @@
 //保存记录
 -(void)clickSave:(UIBarButtonItem *)sender{
     
+        [self save];
         _addLabelValue(_textView.text);
-
 
     [self dismissViewControllerAnimated:YES completion:^{
 
-        
     }];
 
 }

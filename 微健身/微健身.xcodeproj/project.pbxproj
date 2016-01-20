@@ -10,6 +10,15 @@
 		CC009C801C3FE625000C2B31 /* zixunTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC009C7E1C3FE625000C2B31 /* zixunTableViewCell.m */; };
 		CC009C811C3FE625000C2B31 /* zixunTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC009C7F1C3FE625000C2B31 /* zixunTableViewCell.xib */; };
 		CC016A0A1C3EA7EC00BEB42D /* zixunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC016A081C3EA7EC00BEB42D /* zixunViewController.m */; };
+		CC05C6691C4F874C0058FC37 /* 背 部.png in Resources */ = {isa = PBXBuildFile; fileRef = CC05C6601C4F874C0058FC37 /* 背 部.png */; };
+		CC05C66A1C4F874C0058FC37 /* 大 腿.png in Resources */ = {isa = PBXBuildFile; fileRef = CC05C6611C4F874C0058FC37 /* 大 腿.png */; };
+		CC05C66B1C4F874C0058FC37 /* 腹 肌.png in Resources */ = {isa = PBXBuildFile; fileRef = CC05C6621C4F874C0058FC37 /* 腹 肌.png */; };
+		CC05C66C1C4F874C0058FC37 /* 肱 二头肌.png in Resources */ = {isa = PBXBuildFile; fileRef = CC05C6631C4F874C0058FC37 /* 肱 二头肌.png */; };
+		CC05C66D1C4F874C0058FC37 /* 肱 三头肌.png in Resources */ = {isa = PBXBuildFile; fileRef = CC05C6641C4F874C0058FC37 /* 肱 三头肌.png */; };
+		CC05C66E1C4F874C0058FC37 /* 肩 部.png in Resources */ = {isa = PBXBuildFile; fileRef = CC05C6651C4F874C0058FC37 /* 肩 部.png */; };
+		CC05C66F1C4F874C0058FC37 /* 前 臂.png in Resources */ = {isa = PBXBuildFile; fileRef = CC05C6661C4F874C0058FC37 /* 前 臂.png */; };
+		CC05C6701C4F874C0058FC37 /* 小 腿.png in Resources */ = {isa = PBXBuildFile; fileRef = CC05C6671C4F874C0058FC37 /* 小 腿.png */; };
+		CC05C6711C4F874C0058FC37 /* 胸 肌.png in Resources */ = {isa = PBXBuildFile; fileRef = CC05C6681C4F874C0058FC37 /* 胸 肌.png */; };
 		CC07E86D1C223F0C0009F8E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC07E86C1C223F0C0009F8E4 /* ViewController.m */; };
 		CC090E691C0EA12D00537682 /* DataModels.m in Sources */ = {isa = PBXBuildFile; fileRef = CC090E681C0EA12D00537682 /* DataModels.m */; };
 		CC0974D61C190FAE0058CB24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0974D41C190FAE0058CB24 /* Main.storyboard */; };
@@ -47,15 +56,6 @@
 		CC76F2441C1D53E400329DEA /* a_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC76F23A1C1D53E400329DEA /* a_2.jpg */; };
 		CC76F2451C1D53E400329DEA /* a_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC76F23B1C1D53E400329DEA /* a_3.jpg */; };
 		CC76F2461C1D53E400329DEA /* d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC76F23C1C1D53E400329DEA /* d.jpg */; };
-		CC8029681C21A73F0041758F /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CC80295F1C21A73F0041758F /* 1.png */; };
-		CC8029691C21A73F0041758F /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029601C21A73F0041758F /* 2.png */; };
-		CC80296A1C21A73F0041758F /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029611C21A73F0041758F /* 3.png */; };
-		CC80296B1C21A73F0041758F /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029621C21A73F0041758F /* 4.png */; };
-		CC80296C1C21A73F0041758F /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029631C21A73F0041758F /* 5.png */; };
-		CC80296D1C21A73F0041758F /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029641C21A73F0041758F /* 6.png */; };
-		CC80296E1C21A73F0041758F /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029651C21A73F0041758F /* 7.png */; };
-		CC80296F1C21A73F0041758F /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029661C21A73F0041758F /* 8.png */; };
-		CC8029701C21A73F0041758F /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8029671C21A73F0041758F /* 9.png */; };
 		CC9B1FE61C4134A800729644 /* faxianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9B1FE41C4134A800729644 /* faxianViewController.m */; };
 		CC9B1FE71C4134A800729644 /* faxianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9B1FE51C4134A800729644 /* faxianViewController.xib */; };
 		CCA3BC231C48D82100A03CD3 /* 动画.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA3BC1A1C48D82100A03CD3 /* 动画.png */; };
@@ -75,6 +75,12 @@
 		CCC9AD571C049513009AB692 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC9AD551C049513009AB692 /* LaunchScreen.xib */; };
 		CCC9AD631C049514009AB692 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC9AD621C049514009AB692 /* ___Tests.m */; };
 		CCCE81A31C055670008D9F94 /* CartoonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCE81A21C055670008D9F94 /* CartoonViewController.m */; };
+		CCE0E63D1C4DE17700FF06EA /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0E6311C4DE17700FF06EA /* AFHTTPSessionManager.m */; };
+		CCE0E63E1C4DE17700FF06EA /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0E6341C4DE17700FF06EA /* AFNetworkReachabilityManager.m */; };
+		CCE0E63F1C4DE17700FF06EA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0E6361C4DE17700FF06EA /* AFSecurityPolicy.m */; };
+		CCE0E6401C4DE17700FF06EA /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0E6381C4DE17700FF06EA /* AFURLRequestSerialization.m */; };
+		CCE0E6411C4DE17700FF06EA /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0E63A1C4DE17700FF06EA /* AFURLResponseSerialization.m */; };
+		CCE0E6421C4DE17700FF06EA /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE0E63C1C4DE17700FF06EA /* AFURLSessionManager.m */; };
 		CCE2C9631C4393CD00B32AF8 /* 肌肉_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE2C95A1C4393CD00B32AF8 /* 肌肉_1.jpg */; };
 		CCE2C9641C4393CD00B32AF8 /* 肌肉_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE2C95B1C4393CD00B32AF8 /* 肌肉_2.jpg */; };
 		CCE2C9651C4393CD00B32AF8 /* 肌肉_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE2C95C1C4393CD00B32AF8 /* 肌肉_3.jpg */; };
@@ -103,6 +109,15 @@
 		CC009C7F1C3FE625000C2B31 /* zixunTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zixunTableViewCell.xib; sourceTree = "<group>"; };
 		CC016A071C3EA7EC00BEB42D /* zixunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zixunViewController.h; sourceTree = "<group>"; };
 		CC016A081C3EA7EC00BEB42D /* zixunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zixunViewController.m; sourceTree = "<group>"; };
+		CC05C6601C4F874C0058FC37 /* 背 部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背 部.png"; path = "健身宝典素材/图片/视图1肌肉按钮/背 部.png"; sourceTree = SOURCE_ROOT; };
+		CC05C6611C4F874C0058FC37 /* 大 腿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "大 腿.png"; path = "健身宝典素材/图片/视图1肌肉按钮/大 腿.png"; sourceTree = SOURCE_ROOT; };
+		CC05C6621C4F874C0058FC37 /* 腹 肌.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "腹 肌.png"; path = "健身宝典素材/图片/视图1肌肉按钮/腹 肌.png"; sourceTree = SOURCE_ROOT; };
+		CC05C6631C4F874C0058FC37 /* 肱 二头肌.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "肱 二头肌.png"; path = "健身宝典素材/图片/视图1肌肉按钮/肱 二头肌.png"; sourceTree = SOURCE_ROOT; };
+		CC05C6641C4F874C0058FC37 /* 肱 三头肌.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "肱 三头肌.png"; path = "健身宝典素材/图片/视图1肌肉按钮/肱 三头肌.png"; sourceTree = SOURCE_ROOT; };
+		CC05C6651C4F874C0058FC37 /* 肩 部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "肩 部.png"; path = "健身宝典素材/图片/视图1肌肉按钮/肩 部.png"; sourceTree = SOURCE_ROOT; };
+		CC05C6661C4F874C0058FC37 /* 前 臂.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "前 臂.png"; path = "健身宝典素材/图片/视图1肌肉按钮/前 臂.png"; sourceTree = SOURCE_ROOT; };
+		CC05C6671C4F874C0058FC37 /* 小 腿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "小 腿.png"; path = "健身宝典素材/图片/视图1肌肉按钮/小 腿.png"; sourceTree = SOURCE_ROOT; };
+		CC05C6681C4F874C0058FC37 /* 胸 肌.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "胸 肌.png"; path = "健身宝典素材/图片/视图1肌肉按钮/胸 肌.png"; sourceTree = SOURCE_ROOT; };
 		CC07E86C1C223F0C0009F8E4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CC090E671C0EA12D00537682 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
 		CC090E681C0EA12D00537682 /* DataModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModels.m; sourceTree = "<group>"; };
@@ -159,15 +174,6 @@
 		CC76F23A1C1D53E400329DEA /* a_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a_2.jpg; sourceTree = "<group>"; };
 		CC76F23B1C1D53E400329DEA /* a_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a_3.jpg; sourceTree = "<group>"; };
 		CC76F23C1C1D53E400329DEA /* d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d.jpg; sourceTree = "<group>"; };
-		CC80295F1C21A73F0041758F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = "健身宝典素材/图片/视图1肌肉按钮/1.png"; sourceTree = SOURCE_ROOT; };
-		CC8029601C21A73F0041758F /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = "健身宝典素材/图片/视图1肌肉按钮/2.png"; sourceTree = SOURCE_ROOT; };
-		CC8029611C21A73F0041758F /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = "健身宝典素材/图片/视图1肌肉按钮/3.png"; sourceTree = SOURCE_ROOT; };
-		CC8029621C21A73F0041758F /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = "健身宝典素材/图片/视图1肌肉按钮/4.png"; sourceTree = SOURCE_ROOT; };
-		CC8029631C21A73F0041758F /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5.png; path = "健身宝典素材/图片/视图1肌肉按钮/5.png"; sourceTree = SOURCE_ROOT; };
-		CC8029641C21A73F0041758F /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6.png; path = "健身宝典素材/图片/视图1肌肉按钮/6.png"; sourceTree = SOURCE_ROOT; };
-		CC8029651C21A73F0041758F /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 7.png; path = "健身宝典素材/图片/视图1肌肉按钮/7.png"; sourceTree = SOURCE_ROOT; };
-		CC8029661C21A73F0041758F /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8.png; path = "健身宝典素材/图片/视图1肌肉按钮/8.png"; sourceTree = SOURCE_ROOT; };
-		CC8029671C21A73F0041758F /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9.png; path = "健身宝典素材/图片/视图1肌肉按钮/9.png"; sourceTree = SOURCE_ROOT; };
 		CC9B1FE31C4134A800729644 /* faxianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faxianViewController.h; sourceTree = "<group>"; };
 		CC9B1FE41C4134A800729644 /* faxianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = faxianViewController.m; sourceTree = "<group>"; };
 		CC9B1FE51C4134A800729644 /* faxianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = faxianViewController.xib; sourceTree = "<group>"; };
@@ -197,6 +203,20 @@
 		CCCE81A11C055670008D9F94 /* CartoonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonViewController.h; sourceTree = "<group>"; };
 		CCCE81A21C055670008D9F94 /* CartoonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonViewController.m; sourceTree = "<group>"; };
 		CCE0574A1C3B518B0065FAA9 /* zijihuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zijihuaViewController.h; sourceTree = "<group>"; };
+		CCE0E62E1C4DE15A00FF06EA /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		CCE0E6301C4DE17700FF06EA /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		CCE0E6311C4DE17700FF06EA /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		CCE0E6321C4DE17700FF06EA /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		CCE0E6331C4DE17700FF06EA /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		CCE0E6341C4DE17700FF06EA /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		CCE0E6351C4DE17700FF06EA /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		CCE0E6361C4DE17700FF06EA /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		CCE0E6371C4DE17700FF06EA /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		CCE0E6381C4DE17700FF06EA /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		CCE0E6391C4DE17700FF06EA /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		CCE0E63A1C4DE17700FF06EA /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		CCE0E63B1C4DE17700FF06EA /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		CCE0E63C1C4DE17700FF06EA /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		CCE2C95A1C4393CD00B32AF8 /* 肌肉_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "肌肉_1.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/肌肉_1.jpg"; sourceTree = SOURCE_ROOT; };
 		CCE2C95B1C4393CD00B32AF8 /* 肌肉_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "肌肉_2.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/肌肉_2.jpg"; sourceTree = SOURCE_ROOT; };
 		CCE2C95C1C4393CD00B32AF8 /* 肌肉_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "肌肉_3.jpg"; path = "健身宝典素材/图片/视图1肌肉按钮/肌肉_3.jpg"; sourceTree = SOURCE_ROOT; };
@@ -305,6 +325,15 @@
 		CC1E72501C190AFD0099D882 /* 视图1肌肉按钮 */ = {
 			isa = PBXGroup;
 			children = (
+				CC05C6601C4F874C0058FC37 /* 背 部.png */,
+				CC05C6611C4F874C0058FC37 /* 大 腿.png */,
+				CC05C6621C4F874C0058FC37 /* 腹 肌.png */,
+				CC05C6631C4F874C0058FC37 /* 肱 二头肌.png */,
+				CC05C6641C4F874C0058FC37 /* 肱 三头肌.png */,
+				CC05C6651C4F874C0058FC37 /* 肩 部.png */,
+				CC05C6661C4F874C0058FC37 /* 前 臂.png */,
+				CC05C6671C4F874C0058FC37 /* 小 腿.png */,
+				CC05C6681C4F874C0058FC37 /* 胸 肌.png */,
 				CCE2C95A1C4393CD00B32AF8 /* 肌肉_1.jpg */,
 				CCE2C95B1C4393CD00B32AF8 /* 肌肉_2.jpg */,
 				CCE2C95C1C4393CD00B32AF8 /* 肌肉_3.jpg */,
@@ -314,15 +343,6 @@
 				CCE2C9601C4393CD00B32AF8 /* 肌肉_8.jpg */,
 				CCE2C9611C4393CD00B32AF8 /* 肌肉_9.jpg */,
 				CCE2C9621C4393CD00B32AF8 /* 肌肉_6.jpg */,
-				CC80295F1C21A73F0041758F /* 1.png */,
-				CC8029601C21A73F0041758F /* 2.png */,
-				CC8029611C21A73F0041758F /* 3.png */,
-				CC8029621C21A73F0041758F /* 4.png */,
-				CC8029631C21A73F0041758F /* 5.png */,
-				CC8029641C21A73F0041758F /* 6.png */,
-				CC8029651C21A73F0041758F /* 7.png */,
-				CC8029661C21A73F0041758F /* 8.png */,
-				CC8029671C21A73F0041758F /* 9.png */,
 			);
 			name = "视图1肌肉按钮";
 			path = "主界面/视图1肌肉按钮";
@@ -363,6 +383,35 @@
 			path = "../微健身/图标";
 			sourceTree = "<group>";
 		};
+		CC6C92FB1C4D04B300E2A4DC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CCC8E1D11C0EA07E00752606 /* 锻炼 */,
+				CCA454381C1EEC7B00736D9B /* 计划 */,
+				CCA454391C1EEC8100736D9B /* 记录 */,
+				CC016A0C1C3EA7FE00BEB42D /* 资讯 */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		CC6C92FC1C4D04BF00E2A4DC /* mode */ = {
+			isa = PBXGroup;
+			children = (
+				CCE0E62E1C4DE15A00FF06EA /* Header.h */,
+				CC090E671C0EA12D00537682 /* DataModels.h */,
+				CC090E681C0EA12D00537682 /* DataModels.m */,
+			);
+			name = mode;
+			sourceTree = "<group>";
+		};
+		CC6C92FD1C4D04C600E2A4DC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CC0974D41C190FAE0058CB24 /* Main.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		CCA454381C1EEC7B00736D9B /* 计划 */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,9 +443,6 @@
 				CCCE81A21C055670008D9F94 /* CartoonViewController.m */,
 				CC7581101C05B1AF0032B73A /* MuscleViewController.h */,
 				CC7581111C05B1AF0032B73A /* MuscleViewController.m */,
-				CC090E671C0EA12D00537682 /* DataModels.h */,
-				CC090E681C0EA12D00537682 /* DataModels.m */,
-				CC0974D41C190FAE0058CB24 /* Main.storyboard */,
 			);
 			name = "锻炼";
 			sourceTree = "<group>";
@@ -422,11 +468,11 @@
 		CCC9AD451C049513009AB692 /* 微健身 */ = {
 			isa = PBXGroup;
 			children = (
+				CCE0E62F1C4DE17700FF06EA /* AFNetworking */,
 				CC1321281C4682CC00AB8106 /* Masonry */,
-				CCC8E1D11C0EA07E00752606 /* 锻炼 */,
-				CCA454381C1EEC7B00736D9B /* 计划 */,
-				CCA454391C1EEC8100736D9B /* 记录 */,
-				CC016A0C1C3EA7FE00BEB42D /* 资讯 */,
+				CC6C92FC1C4D04BF00E2A4DC /* mode */,
+				CC6C92FD1C4D04C600E2A4DC /* view */,
+				CC6C92FB1C4D04B300E2A4DC /* controller */,
 				CCC9AD461C049513009AB692 /* Supporting Files */,
 			);
 			path = "微健身";
@@ -462,6 +508,26 @@
 				CCC9AD611C049514009AB692 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCE0E62F1C4DE17700FF06EA /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CCE0E6301C4DE17700FF06EA /* AFHTTPSessionManager.h */,
+				CCE0E6311C4DE17700FF06EA /* AFHTTPSessionManager.m */,
+				CCE0E6321C4DE17700FF06EA /* AFNetworking.h */,
+				CCE0E6331C4DE17700FF06EA /* AFNetworkReachabilityManager.h */,
+				CCE0E6341C4DE17700FF06EA /* AFNetworkReachabilityManager.m */,
+				CCE0E6351C4DE17700FF06EA /* AFSecurityPolicy.h */,
+				CCE0E6361C4DE17700FF06EA /* AFSecurityPolicy.m */,
+				CCE0E6371C4DE17700FF06EA /* AFURLRequestSerialization.h */,
+				CCE0E6381C4DE17700FF06EA /* AFURLRequestSerialization.m */,
+				CCE0E6391C4DE17700FF06EA /* AFURLResponseSerialization.h */,
+				CCE0E63A1C4DE17700FF06EA /* AFURLResponseSerialization.m */,
+				CCE0E63B1C4DE17700FF06EA /* AFURLSessionManager.h */,
+				CCE0E63C1C4DE17700FF06EA /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,35 +610,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC80296F1C21A73F0041758F /* 8.png in Resources */,
+				CC05C66A1C4F874C0058FC37 /* 大 腿.png in Resources */,
 				CC1E728F1C190AFD0099D882 /* 背景1.png in Resources */,
+				CC05C66E1C4F874C0058FC37 /* 肩 部.png in Resources */,
 				CC0BB9061C4762C400654FBB /* 1_7.mp4 in Resources */,
+				CC05C66F1C4F874C0058FC37 /* 前 臂.png in Resources */,
 				CCA3BC2B1C48D82100A03CD3 /* 主页面.jpg in Resources */,
 				CCA3BC251C48D82100A03CD3 /* 计划.png in Resources */,
-				CC80296E1C21A73F0041758F /* 7.png in Resources */,
 				CC0974D61C190FAE0058CB24 /* Main.storyboard in Resources */,
 				CC0BB9101C4762C400654FBB /* 1_6.mp4 in Resources */,
-				CC8029691C21A73F0041758F /* 2.png in Resources */,
 				CC76F2461C1D53E400329DEA /* d.jpg in Resources */,
+				CC05C66C1C4F874C0058FC37 /* 肱 二头肌.png in Resources */,
 				CCE2C9651C4393CD00B32AF8 /* 肌肉_3.jpg in Resources */,
-				CC80296A1C21A73F0041758F /* 3.png in Resources */,
 				CC0BB9121C4762C400654FBB /* 1_8.mp4 in Resources */,
 				CC7480C51C42576A00D3ECC7 /* 右高亮.png in Resources */,
 				CC0BB90F1C4762C400654FBB /* 1_3.mp4 in Resources */,
-				CC8029701C21A73F0041758F /* 9.png in Resources */,
 				CCA3BC281C48D82100A03CD3 /* 11_1.jpg in Resources */,
 				CC0BB9081C4762C400654FBB /* 1_5.mp4 in Resources */,
-				CC80296D1C21A73F0041758F /* 6.png in Resources */,
 				CCE2C9691C4393CD00B32AF8 /* 肌肉_8.jpg in Resources */,
+				CC05C66B1C4F874C0058FC37 /* 腹 肌.png in Resources */,
 				CCC9AD571C049513009AB692 /* LaunchScreen.xib in Resources */,
-				CC80296C1C21A73F0041758F /* 5.png in Resources */,
 				CCE2C9661C4393CD00B32AF8 /* 肌肉_4.jpg in Resources */,
 				CC9B1FE71C4134A800729644 /* faxianViewController.xib in Resources */,
 				CC0BB9041C4762C400654FBB /* 1_4.mp4 in Resources */,
 				CCE2C9671C4393CD00B32AF8 /* 肌肉_5.jpg in Resources */,
+				CC05C6701C4F874C0058FC37 /* 小 腿.png in Resources */,
 				CCA3BC231C48D82100A03CD3 /* 动画.png in Resources */,
 				CC76F2451C1D53E400329DEA /* a_3.jpg in Resources */,
-				CC80296B1C21A73F0041758F /* 4.png in Resources */,
 				CC009C811C3FE625000C2B31 /* zixunTableViewCell.xib in Resources */,
 				CC0BB90A1C4762C400654FBB /* 1_2.mp4 in Resources */,
 				CC0BB90C1C4762C400654FBB /* 1_1.mp4 in Resources */,
@@ -591,12 +655,14 @@
 				CCE2C9AC1C43E28200B32AF8 /* 123.plist in Resources */,
 				CCC9AD541C049513009AB692 /* Images.xcassets in Resources */,
 				CCE2C9681C4393CD00B32AF8 /* 肌肉_7.jpg in Resources */,
-				CC8029681C21A73F0041758F /* 1.png in Resources */,
+				CC05C6711C4F874C0058FC37 /* 胸 肌.png in Resources */,
+				CC05C6691C4F874C0058FC37 /* 背 部.png in Resources */,
 				CC1321431C4682CC00AB8106 /* Info.plist in Resources */,
 				CCA3BC291C48D82100A03CD3 /* 11_2.jpg in Resources */,
 				CC7480C61C42576A00D3ECC7 /* 左.png in Resources */,
 				CCA3BC271C48D82100A03CD3 /* 咨询.png in Resources */,
 				CCE2C9641C4393CD00B32AF8 /* 肌肉_2.jpg in Resources */,
+				CC05C66D1C4F874C0058FC37 /* 肱 三头肌.png in Resources */,
 				CCA3BC2A1C48D82100A03CD3 /* 11_3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,12 +690,18 @@
 				CC13214C1C4682CC00AB8106 /* View+MASAdditions.m in Sources */,
 				CC009C801C3FE625000C2B31 /* zixunTableViewCell.m in Sources */,
 				CC1321481C4682CC00AB8106 /* MASViewAttribute.m in Sources */,
+				CCE0E63F1C4DE17700FF06EA /* AFSecurityPolicy.m in Sources */,
 				CC1321461C4682CC00AB8106 /* MASConstraintMaker.m in Sources */,
 				CC7581121C05B1AF0032B73A /* MuscleViewController.m in Sources */,
+				CCE0E63D1C4DE17700FF06EA /* AFHTTPSessionManager.m in Sources */,
 				CC0E2E7F1C2A989B00FA79BB /* jiluViewController.m in Sources */,
+				CCE0E6421C4DE17700FF06EA /* AFURLSessionManager.m in Sources */,
+				CCE0E63E1C4DE17700FF06EA /* AFNetworkReachabilityManager.m in Sources */,
 				CC016A0A1C3EA7EC00BEB42D /* zixunViewController.m in Sources */,
 				CC13214D1C4682CC00AB8106 /* ViewController+MASAdditions.m in Sources */,
 				CC090E691C0EA12D00537682 /* DataModels.m in Sources */,
+				CCE0E6411C4DE17700FF06EA /* AFURLResponseSerialization.m in Sources */,
+				CCE0E6401C4DE17700FF06EA /* AFURLRequestSerialization.m in Sources */,
 				CC13214A1C4682CC00AB8106 /* NSArray+MASAdditions.m in Sources */,
 				CCC9AD4C1C049513009AB692 /* AppDelegate.m in Sources */,
 				CC1321471C4682CC00AB8106 /* MASLayoutConstraint.m in Sources */,
