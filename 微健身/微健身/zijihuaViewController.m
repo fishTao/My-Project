@@ -7,10 +7,9 @@
 //
 
 #import "zijihuaViewController.h"
-#import "DataModels.h"
 #import "Masonry.h"
 #import "Header.h"
-
+#import "DataModels.h"
 
 @interface zijihuaViewController ()<UIScrollViewDelegate>
 
@@ -68,10 +67,10 @@
     
 #pragma mark =====ScrollView=====
     int count = 9;
-    _scroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 240, 210)];
+    _scroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width-80, 210)];
     [_myView addSubview:_scroll];
     //设置contentsize
-    _scroll.contentSize = CGSizeMake(240 * count, 210);
+    _scroll.contentSize = CGSizeMake((self.view.frame.size.width-80) * count, 210);
     //设置分页
     _scroll.pagingEnabled = YES;
     //设置代理
@@ -85,7 +84,7 @@
     for (int i = 0;i < count; i++ ) {
 
         
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(240 * i, 0, 240,210)];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-80) * i, 0, self.view.frame.size.width-80,210)];
         [_scroll addSubview:imageView];
         
         //设置scroll的图片
@@ -138,6 +137,7 @@
     self.index = _inter;
     
     //======   //调用自动布局
+    
     [self update];
         
 
@@ -168,7 +168,7 @@
     _label6.numberOfLines = 10;
 
     //让scrollView随左右按钮偏移
-    self.scroll.contentOffset = CGPointMake((index) * 240, 0);
+    self.scroll.contentOffset = CGPointMake((index) * _myView.frame.size.width, 0);
     
    
 }
@@ -219,7 +219,7 @@
             make.top.equalTo(_myView.mas_bottom).with.offset(10);
             make.left.equalTo(self.view.mas_left).with.offset(10);
             make.size.mas_equalTo(CGSizeMake(85, 21));
-            make.right.equalTo(_label4.mas_left).with.offset(10);
+            make.right.equalTo(_label4.mas_left).with.offset(-15);
             make.centerY.equalTo(@[_label1,_label4]);
     }];
         
@@ -229,10 +229,10 @@
     }];
     
     [_label2 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_label1.mas_bottom).with.offset(20);
+            make.top.equalTo(_label1.mas_bottom).with.offset(40);
             make.left.equalTo(self.view.mas_left).with.offset(10);
             make.size.mas_equalTo(CGSizeMake(85, 21));
-            make.right.equalTo(_label5.mas_left).with.offset(-20);
+            make.right.equalTo(_label5.mas_left).with.offset(-15);
             make.centerY.equalTo(@[_label2,_label5]);
 
     }];
@@ -244,7 +244,7 @@
     }];
     
     [_label3 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_label2.mas_bottom).with.offset(20);
+            make.top.equalTo(_label2.mas_bottom).with.offset(40);
             make.left.equalTo(self.view.mas_left).with.offset(10);
             make.size.mas_equalTo(CGSizeMake(85, 21));
     }];

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-
+#import "Header.h"
 @interface AppDelegate ()
 
 @end
@@ -17,14 +17,56 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    UIWindow *window = [[UIWindow alloc]init];
-//    self.window  = window;
-//    ViewController *vc = [[ViewController alloc]init];
-//    _window.rootViewController = vc;
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.window.rootViewController = [self instantiateRootVC];
+    [self.window makeKeyAndVisible];
+
     
     // Override point for customization after application launch.
     return YES;
 }
+
+-(UIViewController *)instantiateRootVC{
+    //根据应用打开情况，第一次打开，显示引导页，之后再打开应用，显示的是首页
+    
+    //app运行的版本号
+    NSString *currentVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
+    
+    
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    NSString *appRun = [user objectForKey:kAppRun];
+    
+    if ([appRun isEqualToString:currentVersion]) {
+        //之前已经运行过该版本
+        UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        UIViewController *vc = [story instantiateViewControllerWithIdentifier:@"main"];
+        return vc;
+    }else{
+        UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        UIViewController *vc = [story instantiateViewControllerWithIdentifier:@"guide"];
+        return vc;
+    }
+    
+    return nil;
+}
+
+-(void)guideEnd{
+    //切换控制器
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UIViewController *vc = [story instantiateViewControllerWithIdentifier:@"main"];
+    self.window.rootViewController = vc;
+    //保存版本号
+    NSString *currentVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
+    
+    //保存标记
+    [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:kAppRun];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

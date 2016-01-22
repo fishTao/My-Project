@@ -10,7 +10,7 @@
 #define Header_h
 
 //请求的url
-#define baseURl @"http://api.fit-time.cn/ftinfo/refreshInfos?"
+#define baseURl @"http-//www.fit-time.com/news/"
 //图片的Url
 #define ImageURL @"http://www.fungpu.com/houseapp/"
 //存储文件的名字
@@ -20,6 +20,6 @@
 
 //子计划里面的用的宏
 #define Swidth  (self.view.frame.size.width)-80
-
+#define kAppRun @"appRun"
 
 #endif /* Header_h */

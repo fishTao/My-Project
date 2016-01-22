@@ -7,16 +7,18 @@
 //
 
 #import "AddViewController.h"
-#define fileName @"WJS.plist"
 #import "jiluViewController.h"
-
+#import "Masonry.h"
+#define fileName @"WJS.plist"
 
 @interface AddViewController ()
 
+@property (nonatomic ,strong) UIImageView *img;
+@property (nonatomic ,strong)UILabel *label;
 @property (nonatomic ,strong)UITextView *textView;
 
 @property(nonatomic,strong) NSString *filePath;
-@property (nonatomic ,strong)NSMutableArray *data;
+@property (nonatomic ,strong)NSArray *data;
 
 @end
 
@@ -25,14 +27,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    
     //设置背景色
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 375, 667)];
-    img.image = [UIImage imageNamed:@"背景1"];
-    img.alpha = 0.8;
-    [self.view addSubview:img];
+    _img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 375, 667)];
+    _img.image = [UIImage imageNamed:@"背景1"];
+    _img.alpha = 0.8;
+    [self.view addSubview:_img];
     
     //设置导航栏
     UIBarButtonItem *btn = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(clickBack:)];
@@ -44,19 +46,18 @@
     self.navigationItem.title = @"请在下面添加记录";
     
     //设置时间的lable
-    UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(38, 160, 50, 20)];
-    [lab setText:@"事件:"];
-    lab.font = [UIFont systemFontOfSize:22];
-    lab.textColor = [UIColor blackColor];
+    _label = [[UILabel alloc] initWithFrame:CGRectMake(38, 160, 50, 20)];
+    [_label setText:@"事件:"];
+    _label.font = [UIFont systemFontOfSize:22];
+    _label.textColor = [UIColor blackColor];
        //设置居中
-    lab.textAlignment = NSTextAlignmentCenter;
+    _label.textAlignment = NSTextAlignmentCenter;
     
 
-    [self.view addSubview:lab];
+    [self.view addSubview:_label];
 
     //创建一个textfield 来添加记录。
-   _textView
-    = [[UITextView alloc] initWithFrame:CGRectMake(45, 193, 285, 160)];
+    _textView = [[UITextView alloc] initWithFrame:CGRectMake(45, 193, 285, 160)];
     _textView.backgroundColor = [UIColor groupTableViewBackgroundColor];
 
     _textView.font = [UIFont systemFontOfSize:18];
@@ -72,8 +73,10 @@
     [self.view addSubview:_textView
      ];
     [_textView setText:@"日期 :\n事件 :"];
-
-//    _data = [NSString stringWithString:_textView.text];
+    
+    
+    
+    [self upsave];
     // Do any additional setup after loading the view.
 }
 
@@ -86,16 +89,38 @@
     NSString *filePath = [docPath stringByAppendingPathComponent:@"WJS.plist"];
     NSLog(@"%@",filePath);
     
-    NSArray *array = @[_textView.text];
-     [array writeToFile:filePath atomically:YES];
+     _data = @[_textView.text];
+     [_data writeToFile:filePath atomically:YES];
 
 }
 
 
 
 
+//设置自动布局
+-(void)upsave{
+    [_img mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top);
+        make.left.equalTo(self.view.mas_left);
+        make.right.equalTo(self.view.mas_right);
+        make.bottom.equalTo(self.view.mas_bottom);
+        
+    }];
 
+    [_textView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view.mas_left).with.offset(30);
+        make.right.equalTo(self.view.mas_right).with.offset(-30);
+        make.top.equalTo(self.view.mas_top).with.offset(150);
+        make.height.equalTo(@300);
+    }];
+    
+    [_label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(_textView.mas_top).with.offset(-5);
+        make.left.equalTo(self.view.mas_left).with.offset(20);
+        make.size.mas_equalTo(CGSizeMake(50, 20));
+    }];
 
+}
 
 
 //返回
@@ -111,16 +136,20 @@
     
         [self save];
         _addLabelValue(_textView.text);
+ 
 
+    
     [self dismissViewControllerAnimated:YES completion:^{
 
     }];
 
 }
+
+
 //取消响应
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
 
     //父视图结束编辑，子视图失去第一响应
     [self.view endEditing:YES];

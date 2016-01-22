@@ -11,7 +11,7 @@
 #import "DataModels.h"
 #import <AVFoundation/AVFoundation.h>
 #import "Masonry.h"
-
+#import <CoreMedia/CoreMedia.h>
 
 
 
@@ -21,6 +21,8 @@
 @property (nonatomic ,strong) AVPlayerLayer *playerLayer;
 @property (nonatomic ,strong) UILabel *lab1;
 @property (nonatomic ,strong) UILabel *lab2;
+@property (nonatomic ,strong) UIButton *btn;
+@property (nonatomic ,strong) AVPlayer *player;
 
 
 @end
@@ -31,7 +33,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-
    //进来后将导航栏设置取消透明（即显示）
    self.navigationController.navigationBar.translucent = NO;
     //设置背景颜色为白色
@@ -79,10 +80,7 @@
    _lab2.backgroundColor = [UIColor clearColor];
    
    [self.view addSubview:_lab2];
-   
 
-   
-   
    
    
 //
@@ -95,10 +93,10 @@
    NSURL *url = [NSURL fileURLWithPath:path];
    AVPlayerItem *item = [AVPlayerItem playerItemWithURL:url];
 
-   AVPlayer *player = [[AVPlayer alloc]initWithPlayerItem:item];
+   _player = [[AVPlayer alloc]initWithPlayerItem:item];
    
    //生成layer
-   _playerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
+   _playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
    
    _playerLayer.frame = CGRectMake(0, 0,self.uiView.frame.size.width, _uiView.frame.size.height);
 
@@ -106,12 +104,25 @@
    _playerLayer.videoGravity=AVLayerVideoGravityResizeAspect;
    
    [self.uiView.layer addSublayer:_playerLayer];
-   
-   [player play];
 
+   [_player play];
+
+   //注册通知
+   [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(runLoopTheMovie:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+
+
+  }
+
+- (void)runLoopTheMovie:(NSNotification *)n{
+   //注册的通知  可以自动把 AVPlayerItem 对象传过来，只要接收一下就OK
    
+   AVPlayerItem * p = [n object];
+   //关键代码
+   [p seekToTime:kCMTimeZero];
    
- }
+   [_player play];
+   NSLog(@"重播");
+}
 
 - (void)updateViewConstraints{
    
@@ -128,16 +139,16 @@
    [_lab1 mas_makeConstraints:^(MASConstraintMaker *make) {
       
       make.top.equalTo(_uiView.mas_bottom).with.offset(10);
-      make.left.equalTo(self.view).with.offset(35);
-      make.right.equalTo(self.view).with.offset(-35);
-      make.bottom.equalTo(_lab2.mas_top).with.offset(-20);
+      make.left.equalTo(self.view).with.offset(25);
+      make.right.equalTo(self.view).with.offset(-25);
+      make.bottom.equalTo(_lab2.mas_top).with.offset(-30);
    }];
    
    [_lab2 mas_makeConstraints:^(MASConstraintMaker *make) {
 
-      make.bottom.equalTo(self.view).with.offset(-10);
-      make.left.equalTo(self.view).with.offset(35);
-      make.right.equalTo(self.view).with.offset(-35);
+      make.bottom.equalTo(self.view).with.offset(-30);
+      make.left.equalTo(self.view).with.offset(25);
+      make.right.equalTo(self.view).with.offset(-25);
       
       make.height.equalTo(_lab1);
 

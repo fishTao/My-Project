@@ -8,7 +8,7 @@
 
 #import "jiluViewController.h"
 #import "AddViewController.h"
-
+#import "Masonry.h"
 
 
 @interface jiluViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -25,16 +25,19 @@
     [super viewDidLoad];
     [self saveload];
 
-    
+    _datas = [[NSMutableArray alloc] init];
     //读取plist文件 =====字典
     NSString *dopath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
     
     NSString *filepath = [dopath stringByAppendingPathComponent:@"WJS.plist"];
 
     NSMutableArray *arr = [NSMutableArray arrayWithContentsOfFile:filepath];
+   
+    if (arr.count !=0) {
+        _datas = arr;
 
-    _datas = arr;
-
+    }
+   
 
     //设置背景色
     self.view.backgroundColor = [UIColor whiteColor];
@@ -55,7 +58,7 @@
     //设置代理
     _myTable.delegate = self;
     _myTable.dataSource = self;
-    _myTable.rowHeight = 100;
+    _myTable.rowHeight = 80;
     
     [self.view addSubview:_myTable];
     
@@ -92,6 +95,13 @@
 {
     //移除数据源的数据
     [self.datas removeObjectAtIndex:indexPath.row];
+    
+    NSString *dopath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    
+    NSString *filepath = [dopath stringByAppendingPathComponent:@"WJS.plist"];
+    
+    [_datas writeToFile:(filepath) atomically:YES];
+    
     //移除tableView中的数据
     [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
 
@@ -141,23 +151,37 @@
     View.addLabelValue = ^(NSString *string){
        
         [_datas addObject:string];
-        [self saveload];
+//        [self saveload];
         [self.myTable reloadData];
-    };
+        
+        
+        NSString *dopath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+        
+        NSString *filepath = [dopath stringByAppendingPathComponent:@"WJS.plist"];
+        
+        [_datas writeToFile:(filepath) atomically:YES];
+        
+  };
 
-    
     [self presentViewController:navi animated:YES completion:^{
     }];
     
 }
 
 
+//设置自动布局
+-(void)upsave{
 
+    [_myTable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top);
+        make.left.equalTo(self.view.mas_left);
+        make.right.equalTo(self.view.mas_right);
+        make.bottom.equalTo(self.view.mas_bottom);
 
+    }];
+    
 
-
-
-
+}
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

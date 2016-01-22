@@ -7,12 +7,12 @@
 //
 
 #import "zixunViewController.h"
-#import "zixunTableViewCell.h"
 #import "faxianViewController.h"
 #import "DataModels.h"
 #import "AFNetworking.h"
 #import "Header.h"
 #import "Masonry.h"
+#import "WEBViewController.h"
 
 @interface zixunViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
 @property (nonatomic ,strong) UIPageControl *page;
@@ -37,8 +37,7 @@
     //设置标题栏
     self.title = @"资讯";
 
-    //网络请求
-//    [self requestWJS];
+
     
     
 #pragma mark  ==========创建TableVi============
@@ -57,9 +56,10 @@
     
     _myTable.tableHeaderView = _myView;
     //设置View透明度
-    _myView.alpha = 0.8;
-
+    _myView.alpha = 0.7;
     
+    //调用自动布局
+    [self upsave];
 
 #pragma mark     ========设置四个按钮========
 
@@ -71,7 +71,7 @@
     _btn1.layer.cornerRadius = 60/2.0;
     _btn1.layer.masksToBounds = 60/2.0;
     //设置边框颜色
-    _btn1.layer.borderColor = [UIColor whiteColor].CGColor;
+    _btn1.layer.borderColor = [UIColor blackColor].CGColor;
     //边框宽度
     _btn1.layer.borderWidth = 1.5;
     //字体颜色
@@ -93,7 +93,7 @@
     _btn2.layer.cornerRadius = 60/2.0;
     _btn2.layer.masksToBounds = 60/2.0;
     
-    _btn2.layer.borderColor = [UIColor whiteColor].CGColor;
+    _btn2.layer.borderColor = [UIColor blackColor].CGColor;
     _btn2.layer.borderWidth = 1.5;
     
     [_btn2 setTitle:@"问答" forState:UIControlStateNormal];
@@ -111,7 +111,7 @@
     _btn3.layer.cornerRadius = 60/2.0;
     _btn3.layer.masksToBounds = 60/2.0;
     
-    _btn3.layer.borderColor = [UIColor whiteColor].CGColor;
+    _btn3.layer.borderColor = [UIColor blackColor].CGColor;
     _btn3.layer.borderWidth = 1.5;
     
     [_btn3 setTitle:@"励志" forState:UIControlStateNormal];
@@ -132,7 +132,7 @@
     _btn4.layer.cornerRadius = 60/2.0;
     _btn4.layer.masksToBounds = 60/2.0;
     
-    _btn4.layer.borderColor = [UIColor whiteColor].CGColor;
+    _btn4.layer.borderColor = [UIColor blackColor].CGColor;
     _btn4.layer.borderWidth = 1.5;
     
 
@@ -150,12 +150,13 @@
 
 #pragma mark ========文本框==========
 
-    
+    [self upsave2];
     
     //添加返回键
     UIBarButtonItem *btn = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
     
     self.navigationItem.leftBarButtonItem = btn;
+
 
     
 
@@ -181,35 +182,7 @@
 }
 
 
-#pragma mark   ======网络请求======
-//
-////请求数据
-//-(void)requestWJS{
-//    
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//    NSString *value=@"{\"model\":2014011,\"page_size\":20,\"client\":android,\"ver\":2.4.6.3,\"cat\":1,\"device_id\":865700022806912,\"av\":17,\"brand\":Xiaomi,\"channel\":MI}";
-// 
-//
-//    //设置响应序列化
-//    manager.responseSerializer=[AFHTTPResponseSerializer serializer];
-//    //设置参数
-//    NSDictionary *prameter=@{@"application/json":value};
-//    
-//    [manager GET:baseURl parameters:prameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSLog(@"-------%@",responseObject);
-//        //json解析
-//        NSDictionary *dic=[NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
-//        NSLog(@"====%@",dic);
-//        NSArray *temp=dic[@"RESPONSE_BODY"][@"list"];
-//
-//        
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        NSLog(@"+++++++%@",error);
-//
-//
-//    }];
-//
-//}
+
 
 
 
@@ -248,6 +221,12 @@
 }
 //跳转至技巧4视图
 -(void)jiqiao:(UIButton *)sander{
+    WEBViewController *view4 = [[WEBViewController alloc] init];
+    
+    UINavigationController *navi4 = [[UINavigationController alloc] initWithRootViewController:view4];
+    [self presentViewController:navi4 animated:YES completion:^{
+    
+    }];
     
 }
 
@@ -264,7 +243,7 @@
 
 
 
--(void)updateViewConstraints{
+-(void)upsave{
     
     [_myTable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top);
@@ -273,46 +252,40 @@
         make.bottom.equalTo(self.view.mas_bottom);
 
     }];
-    
-    [_myView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top);
-        make.left.equalTo(self.view.mas_left);
-        make.right.equalTo(self.view.mas_right);
-        
-    }];
-    
+
+
+}
+-(void)upsave2{
+
     [_btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_myView).with.offset(30);
-        make.left.equalTo(_myView).with.offset(30);
-        make.right.equalTo(_btn2.mas_left);
-        make.bottom.equalTo(_myView.mas_bottom).with.offset(30);
-        
-        make.centerX.equalTo(@[_btn1,_myView,_btn2,_btn3,_btn4]);
-        make.width.equalTo(@[_btn2,_btn3,_btn4]);
-        make.height.equalTo(@[_btn2,_btn3,_btn4]);
+        make.top.equalTo(_myView.mas_top).with.offset(20);
+        make.left.equalTo(_myView.mas_left).with.offset(20);
+        make.bottom.equalTo(_myView.mas_bottom).with.offset(-20);
+        make.size.mas_equalTo(CGSizeMake(60, 60));
+        make.centerY.equalTo(@[_btn1,_btn2,_btn3,_btn4]);
+        make.width.equalTo(@[_btn1,_btn2,_btn3,_btn4]);
+        make.height.equalTo(@[_btn1,_btn2,_btn3,_btn4]);
     }];
     
     [_btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_myView).with.offset(30);
-        make.right.equalTo(_btn3.mas_left);
+        
+        make.centerX.equalTo(_btn1).with.offset((self.view.frame.size.width - 100)/3);
     }];
+    
     [_btn3 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_myView).with.offset(30);
-        make.right.equalTo(_btn4.mas_left);
+        
+        
+        make.centerX.equalTo(_btn2).with.offset((self.view.frame.size.width - 100)/3);
+
+    }];
+    
+    [_btn4 mas_makeConstraints:^(MASConstraintMaker *make) {
+
+        make.right.equalTo(self.view.mas_right).with.offset(-20);
     }];
 
-    [_btn4 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_myView).with.offset(30);
-        make.right.equalTo(_myView.mas_right).with.offset(-30);
-    }];
-    
-    
-    
-    
-    [super updateViewConstraints];
 
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

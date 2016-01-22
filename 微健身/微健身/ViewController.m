@@ -12,7 +12,8 @@
 #import "CartoonViewController.h"
 #import "jihuaViewController.h"
 #import "jiluViewController.h"
-#import "zixunViewController.h"
+#import "WEBViewController.h"
+#import "SetViewController.h"
 #import "zijihuaViewController.h"
 #import "Header.h"
 
@@ -49,6 +50,8 @@
 
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+
 //懒加载，添加数据。
 -(NSArray *)datas
 {
@@ -94,11 +97,11 @@
 
 
 - (IBAction)zixun:(UIButton *)sender {
-    zixunViewController *zixunView = [[zixunViewController alloc]init];
+    WEBViewController *webView = [[WEBViewController alloc]init];
     
-    UINavigationController *zixun = [[UINavigationController alloc]initWithRootViewController:zixunView];
+    UINavigationController *web = [[UINavigationController alloc]initWithRootViewController:webView];
     
-    [self presentViewController:zixun animated:YES completion:^{
+    [self presentViewController:web animated:YES completion:^{
         
     }];
 
@@ -109,12 +112,14 @@
 
 #pragma mark  --------右上角弹出弹窗--------
 - (IBAction)set:(UIBarButtonItem *)sender {
-    //创建右上角退出弹窗
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提醒" message:@"是否退出 ? " delegate:self cancelButtonTitle:@"再看看" otherButtonTitles:@"退出", nil];
-    //设置弹窗的风格
-    alertView.alertViewStyle = UIAlertViewStyleDefault ;
-    //弹出alertView
-    [alertView show];
+    
+    SetViewController *setView = [[SetViewController alloc] init];
+    UINavigationController *set = [[UINavigationController alloc] initWithRootViewController:setView];
+    [self presentViewController:set animated:YES completion:^{
+    
+    }];
+    
+
 }
 
 
