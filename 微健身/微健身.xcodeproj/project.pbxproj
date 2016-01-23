@@ -48,8 +48,6 @@
 		CC2D5A4B1C51CD90003E9888 /* 开发者.png in Resources */ = {isa = PBXBuildFile; fileRef = CC2D5A481C51CD90003E9888 /* 开发者.png */; };
 		CC2D5A4F1C51CEE6003E9888 /* 更新.png in Resources */ = {isa = PBXBuildFile; fileRef = CC2D5A4E1C51CEE6003E9888 /* 更新.png */; };
 		CC2D5A521C51D30E003E9888 /* KaifazheView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2D5A511C51D30E003E9888 /* KaifazheView.m */; };
-		CC2D5A561C51DB4C003E9888 /* icon@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC2D5A551C51DB4C003E9888 /* icon@3x.jpg */; };
-		CC2D5A581C51DB85003E9888 /* icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC2D5A571C51DB85003E9888 /* icon@2x.jpg */; };
 		CC2D5A5E1C51ECE2003E9888 /* 肌肉图.png in Resources */ = {isa = PBXBuildFile; fileRef = CC2D5A5D1C51ECE2003E9888 /* 肌肉图.png */; };
 		CC2D5A7A1C51EE5A003E9888 /* 1_背部.png in Resources */ = {isa = PBXBuildFile; fileRef = CC2D5A711C51EE59003E9888 /* 1_背部.png */; };
 		CC2D5A7B1C51EE5A003E9888 /* 1_大腿.png in Resources */ = {isa = PBXBuildFile; fileRef = CC2D5A721C51EE59003E9888 /* 1_大腿.png */; };
@@ -77,6 +75,8 @@
 		CCA3BC2B1C48D82100A03CD3 /* 主页面.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCA3BC221C48D82100A03CD3 /* 主页面.jpg */; };
 		CCA454341C1EDE6900736D9B /* 功能.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA454331C1EDE6900736D9B /* 功能.png */; };
 		CCA4543C1C1EED8E00736D9B /* jihuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4543B1C1EED8E00736D9B /* jihuaViewController.m */; };
+		CCB90C891C522F0C00C7DE37 /* icon@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCB90C871C522F0C00C7DE37 /* icon@3x.jpg */; };
+		CCB90C8A1C522F0C00C7DE37 /* icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCB90C881C522F0C00C7DE37 /* icon@2x.jpg */; };
 		CCC9AD491C049513009AB692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC9AD481C049513009AB692 /* main.m */; };
 		CCC9AD4C1C049513009AB692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC9AD4B1C049513009AB692 /* AppDelegate.m */; };
 		CCC9AD541C049513009AB692 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC9AD531C049513009AB692 /* Images.xcassets */; };
@@ -178,8 +178,6 @@
 		CC2D5A4E1C51CEE6003E9888 /* 更新.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更新.png"; sourceTree = "<group>"; };
 		CC2D5A501C51D30E003E9888 /* KaifazheView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaifazheView.h; sourceTree = "<group>"; };
 		CC2D5A511C51D30E003E9888 /* KaifazheView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaifazheView.m; sourceTree = "<group>"; };
-		CC2D5A551C51DB4C003E9888 /* icon@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon@3x.jpg"; sourceTree = "<group>"; };
-		CC2D5A571C51DB85003E9888 /* icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon@2x.jpg"; sourceTree = "<group>"; };
 		CC2D5A5D1C51ECE2003E9888 /* 肌肉图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "肌肉图.png"; sourceTree = "<group>"; };
 		CC2D5A711C51EE59003E9888 /* 1_背部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1_背部.png"; path = "健身宝典素材/图片/视图1肌肉按钮/1_背部.png"; sourceTree = SOURCE_ROOT; };
 		CC2D5A721C51EE59003E9888 /* 1_大腿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1_大腿.png"; path = "健身宝典素材/图片/视图1肌肉按钮/1_大腿.png"; sourceTree = SOURCE_ROOT; };
@@ -210,6 +208,8 @@
 		CCA454331C1EDE6900736D9B /* 功能.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "功能.png"; sourceTree = "<group>"; };
 		CCA4543A1C1EED8E00736D9B /* jihuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jihuaViewController.h; sourceTree = "<group>"; };
 		CCA4543B1C1EED8E00736D9B /* jihuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jihuaViewController.m; sourceTree = "<group>"; };
+		CCB90C871C522F0C00C7DE37 /* icon@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon@3x.jpg"; sourceTree = "<group>"; };
+		CCB90C881C522F0C00C7DE37 /* icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon@2x.jpg"; sourceTree = "<group>"; };
 		CCC9AD431C049513009AB692 /* 微健身.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微健身.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC9AD471C049513009AB692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCC9AD481C049513009AB692 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -537,8 +537,8 @@
 		CCC9AD461C049513009AB692 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CC2D5A551C51DB4C003E9888 /* icon@3x.jpg */,
-				CC2D5A571C51DB85003E9888 /* icon@2x.jpg */,
+				CCB90C871C522F0C00C7DE37 /* icon@3x.jpg */,
+				CCB90C881C522F0C00C7DE37 /* icon@2x.jpg */,
 				CC1E723B1C190AFD0099D882 /* 健身宝典素材 */,
 				CCC9AD551C049513009AB692 /* LaunchScreen.xib */,
 				CCC9AD531C049513009AB692 /* Images.xcassets */,
@@ -670,18 +670,18 @@
 			files = (
 				CC05C66A1C4F874C0058FC37 /* 大 腿.png in Resources */,
 				CC1E728F1C190AFD0099D882 /* 背景1.png in Resources */,
-				CC2D5A581C51DB85003E9888 /* icon@2x.jpg in Resources */,
 				CC2D5A801C51EE5A003E9888 /* 1_三头肌.png in Resources */,
-				CC2D5A561C51DB4C003E9888 /* icon@3x.jpg in Resources */,
 				CC05C66E1C4F874C0058FC37 /* 肩 部.png in Resources */,
 				CC0BB9061C4762C400654FBB /* 1_7.mp4 in Resources */,
 				CC05C66F1C4F874C0058FC37 /* 前 臂.png in Resources */,
 				CC2D5A7B1C51EE5A003E9888 /* 1_大腿.png in Resources */,
 				CC2D5A7F1C51EE5A003E9888 /* 1_前臂.png in Resources */,
+				CCB90C891C522F0C00C7DE37 /* icon@3x.jpg in Resources */,
 				CCA3BC2B1C48D82100A03CD3 /* 主页面.jpg in Resources */,
 				CCA3BC251C48D82100A03CD3 /* 计划.png in Resources */,
 				CC2D5A7D1C51EE5A003E9888 /* 1_腹肌.png in Resources */,
 				CC0974D61C190FAE0058CB24 /* Main.storyboard in Resources */,
+				CCB90C8A1C522F0C00C7DE37 /* icon@2x.jpg in Resources */,
 				CC0BB9101C4762C400654FBB /* 1_6.mp4 in Resources */,
 				CC05C66C1C4F874C0058FC37 /* 肱 二头肌.png in Resources */,
 				CCE2C9651C4393CD00B32AF8 /* 肌肉_3.jpg in Resources */,

@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self saveload];
-
+   
     _datas = [[NSMutableArray alloc] init];
     //读取plist文件 =====字典
     NSString *dopath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
@@ -59,10 +59,17 @@
     _myTable.delegate = self;
     _myTable.dataSource = self;
     _myTable.rowHeight = 80;
-    
-    [self.view addSubview:_myTable];
-    
 
+    [self.view addSubview:_myTable];
+     [self upsave];
+    UILabel *labs = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 50)];
+    labs.text = @"点击右上角'+'添加记录";
+    labs.textColor = [UIColor redColor];
+    labs.font = [UIFont fontWithName:@"Arial" size:15];
+    labs.textAlignment = YES;
+    _myTable.tableHeaderView = labs;
+
+    
     // Do any additional setup after loading the view.
 }
 -(void)saveload{
@@ -74,7 +81,7 @@
     NSMutableArray *arr = [NSMutableArray arrayWithContentsOfFile:filepath];
     
     _datas = arr;
-
+    
 
 }
 
@@ -123,6 +130,8 @@
     cell.textLabel.text = _datas[indexPath.row];
     
     return cell;
+    
+    
 }
 
 
@@ -162,6 +171,7 @@
         [_datas writeToFile:(filepath) atomically:YES];
         
   };
+    
 
     [self presentViewController:navi animated:YES completion:^{
     }];
